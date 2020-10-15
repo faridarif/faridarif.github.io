@@ -1,0 +1,21 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: Home
+    url: https://faridarif.github.io/
+  - title: "General"
+    url: /general/
+  - title: "InfoSec"
+    url: /infosec/
+  - title: "CTF-Writeups"
+    url: /ctf-writeups/
+
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/

@@ -43,7 +43,7 @@ ID           Response   Lines    Word     Chars       Payload
 
 hint : Looks like base? https://gchq.github.io/CyberChef/
 
-Pada page http://10.10.67.92/island/2100/gre*****row.ticket,terdapat encoded string.
+Pada page http://10.10.67.92/island/2100/gre*****row.ticket , terdapat encoded string.
 
 ```
 This is just a token to get into Queen's Gambit(Ship)
@@ -52,7 +52,7 @@ This is just a token to get into Queen's Gambit(Ship)
 RTy8yh******
 ```
 
-Kita masuk kepada encoding dan decoding.Gunakan CyberChef https://gchq.github.io/CyberChef/ .
+Kali ini kita masuk pula kepada encoding dan decoding.Gunakan CyberChef https://gchq.github.io/CyberChef/ .
 Decode menggunakan format Base58 dan kita kita akan dapat FTP password
 
 ```
@@ -64,7 +64,7 @@ output : !#t****0d
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/nmaplianyu.png){: .align-center}
 
-Daripada nmap scan itu,port 21 open iaitu ftp.Kita perlukan username untuk login.Pada source code */island/* web directory,
+Daripada nmap scan itu,port 21 iaitu ftp adalah open.Namun,kita perlukan username untuk login.Pada source code */island/* web directory,
 kita menjumpai sesuatu.
 
 ```
@@ -131,13 +131,13 @@ Leave_me_alone.png: data
 Queen's_Gambit.png: PNG image data, 1280 x 720, 8-bit/color RGBA, non-interlaced
 ```
 
-Sekarang kita akan masuk kepada Steganography
+Sekarang kita akan masuk pula kepada Steganography
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/xxdlianyu.png){: .align-center}
 
 Nampaknya PNG header telah hilang.Kita perlu lengkapkan ia menggunakan hex format
 
-- *printf '\x89\x50\x4E\x47\x0D\x0A\x1A\x0A' | dd conv=notrunc of=Leave_me_alone.png bs=1*
+- printf '\x89\x50\x4E\x47\x0D\x0A\x1A\x0A' | dd conv=notrunc of=Leave_me_alone.png bs=1
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/pngheaderlianyu.png){: .align-center}
 

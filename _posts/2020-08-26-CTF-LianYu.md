@@ -1,6 +1,6 @@
 ---
 title: "Lian Yu (TryHackMe)"
-date: 2020-08-36
+date: 2020-08-26
 layout: single
 permalink: /ctf-writeups/lianyu-thm/
 tags: [Hacking, CTF]

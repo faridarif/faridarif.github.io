@@ -1,6 +1,6 @@
 ---
 title: "General"
-layout: single
+layout: archive
 permalink: /general/
 author_profile: true
 ---

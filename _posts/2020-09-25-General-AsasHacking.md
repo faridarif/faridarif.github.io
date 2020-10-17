@@ -18,6 +18,12 @@ terjamin.Namun untuk memiliki kemahiran **Hacking** ini,anda perlu belajar dan m
 perkara asas dalam **Computer Science** dan **Information Technology**
         
 ## 1) Programming
+
+```python
+greetings =  "Hello Everyone."
+Name = "Farid"
+print(greetings + "My Name Is " + Name)
+```
       
 Asas kepada pembinaan sesuatu alatan elektronik dan aplikasi itu adalah **programming**.Komputer,telefon,
 smart tv,Whatsapp,Instagram,Google malah Internet sekalipun adalah program yang dibina oleh programmer 
@@ -31,15 +37,7 @@ programming language yang lain.**Kenapa programming penting dalam hacking?** Ker
 membina exploit atau malicious software (malware) untuk mengeksploitasi sesuatu kelemahan (vulnerability) 
 itu dan kita akan banyak melakukan scripting yang kesemua ini memerlukan kemahiran **programming** atau
 **coding**.Kita juga akan berjumpa dengan banyak perkara yang berada dalam bentuk **code**.
-        
-        
-```python
-greetings =  "Hello Everyone."
-Name = "Farid"
-print(greetings + "My Name Is " + Name)
-```
-        
-        
+         
 ## 2) Operating System 
       
 Windows adalah operating system (OS) yang paling popular.Namun,terdapat pelbagai lagi operating system yang 

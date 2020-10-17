@@ -6,7 +6,7 @@ permalink: /ctf-writeups/lianyu-thm/
 tags: [Hacking, CTF]
 ---
 
-![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/lianyu.png){:.align-center}
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/lianyu.png){: .align-center}
 
 # 1) What is the Web Directory you found?
 

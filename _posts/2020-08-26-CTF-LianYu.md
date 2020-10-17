@@ -68,7 +68,6 @@ Daripada nmap scan itu,port 21 iaitu ftp adalah open.Namun,kita perlukan usernam
 kita menjumpai sesuatu.
 
 ```
-html
 <!DOCTYPE html>
 <html>
 <body>

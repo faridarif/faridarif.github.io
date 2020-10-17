@@ -43,7 +43,7 @@ print(greetings + "My Name Is " + Name)
 ## 2) Operating System 
       
 Windows adalah operating system (OS) yang paling popular.Namun,terdapat pelbagai lagi operating system yang 
-ada seperti Linux distributions(Ubuntu,Arch,Parrot OS,Kali Linux),Unix dan sebagainya.Sebagai Penetration 
+lain seperti Linux distributions(Ubuntu,Arch,Parrot OS,Kali Linux),Unix dan sebagainya.Sebagai Penetration 
 Tester atau Security Engineer atau hacker,anda perlu mahir menggunakan pelbagai jenis operating system 
 kerana sesetengah operating system mempunyai file structure dan pengoperasian yang berbeza.
          

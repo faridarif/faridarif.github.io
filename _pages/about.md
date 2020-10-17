@@ -6,7 +6,7 @@ author_profile: true
 
 ---
 
-Blog mengandungi pelbagai artikel tentang **Computer Science** dan **Information Technology** seperti :
+Blog ini mengandungi pelbagai artikel tentang **Computer Science** dan **Information Technology** seperti :
 
 - Networking
 - Programming

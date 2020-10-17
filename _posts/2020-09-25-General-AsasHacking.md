@@ -67,3 +67,5 @@ menggunakan command "dir".
         
      
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/cli.png){: .align-center}
+
+HAPPY HACKING !

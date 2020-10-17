@@ -205,7 +205,6 @@ Nampaknya ia sangat "straight forward" kerana kita boleh execute *pkexec*.
 - *sudo /usr/bin/pkexec /bin/bash*
 
 
-Dan Sekarang Kita Sudah Selesai !
 
 HAPPY HACKING !
 

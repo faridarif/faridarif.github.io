@@ -207,4 +207,6 @@ Nampaknya ia sangat "straight forward" kerana kita boleh execute *pkexec*.
 
 Dan Sekarang Kita Sudah Selesai !
 
+HAPPY HACKING !
+
 

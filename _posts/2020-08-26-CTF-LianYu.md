@@ -26,7 +26,7 @@ Pada source code web directory sebelum ini,kita menjumpai satu lagi hint iaitu *
 
 Sekali lagi,kita akan lakukan *bruteforcing directory*.Run *wfuzz*
 
-- wfuzz -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://10.10.67.92/island/2100/FUZZ.ticket --hc 404
+- wfuzz -w /usr/share/wordlists/dirbuster/ directory-list-2.3-medium.txt -u http://10.10.67.92/island/2100/ FUZZ.ticket --hc 404
 
 ```
 Target: http://10.10.67.92/island/2100/FUZZ.ticket
@@ -43,7 +43,7 @@ ID           Response   Lines    Word     Chars       Payload
 
 hint : Looks like base? https://gchq.github.io/CyberChef/
 
-Pada page http://10.10.67.92/island/2100/gre*****row.ticket , terdapat encoded string.
+Pada page http://10.10.67.92/island/2100/ gre*****row.ticket ,terdapat encoded string.
 
 ```
 This is just a token to get into Queen's Gambit(Ship)

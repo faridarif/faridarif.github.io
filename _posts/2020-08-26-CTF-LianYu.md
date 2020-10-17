@@ -135,7 +135,7 @@ Sekarang kita akan masuk pula kepada Steganography
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/xxdlianyu.png){: .align-center}
 
-Nampaknya PNG header telah hilang.Kita perlu lengkapkan ia menggunakan hex format
+Nampaknya PNG header telah hilang.Kita perlu lengkapkan ia dalam bentuk hex format
 
 ```
 jacobians@reavz:~$ printf '\x89\x50\x4E\x47\x0D\x0A\x1A\x0A' | dd conv=notrunc of=Leave_me_alone.png bs=1
@@ -200,7 +200,7 @@ Untuk privesc pula,kita akan check sudo privileges disebabkan kita mempunyai s**
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/sudolianyu.png){: .align-center}
 
-Nampaknya ia sangat "straight forward" kerana kita boleh execute *pkexec*.
+Nampaknya ia sangat "straight forward".
 
 - *sudo /usr/bin/pkexec /bin/bash*
 

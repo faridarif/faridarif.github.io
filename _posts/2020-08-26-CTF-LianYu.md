@@ -16,7 +16,7 @@ Kita lakukan *bruteforcing directory*.Gunakan *dirbuster*.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/webdirlianyu.png){: .align-center}
 
-# 2) what is the file name you found?
+# 2) What is the file name you found?
 
 Hint : How would you search a file/directory by extension?
 
@@ -39,7 +39,7 @@ ID           Response   Lines    Word     Chars       Payload
 000010444:   200        6 L      11 W     71 Ch       "gre*****row"
 ```
 
-# 3) what is the FTP Password?
+# 3) What is the FTP Password?
 
 hint : Looks like base? https://gchq.github.io/CyberChef/
 
@@ -53,14 +53,14 @@ RTy8yh******
 ```
 
 Kali ini kita masuk pula kepada encoding dan decoding.Gunakan CyberChef https://gchq.github.io/CyberChef/ .
-Decode menggunakan format Base58 dan kita kita akan dapat FTP password
+Decode menggunakan format Base58 dan kita akan dapat FTP password
 
 ```
 input  : RTy8yh******
 output : !#t****0d
 ```
 
-# 4) what is the file name with SSH password?
+# 4) What is the file name with SSH password?
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/nmaplianyu.png){: .align-center}
 
@@ -178,7 +178,7 @@ wild pigs and wolves.
 
 Maka file yang mengandungi ssh password adalah s***o
 
-# 5) User.txt
+# 5) user.txt
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/bashhistorylianyu.png){: .align-center}
 

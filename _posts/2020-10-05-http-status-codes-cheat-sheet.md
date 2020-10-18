@@ -6,7 +6,7 @@ permalink: /infosec/http-status-codes-cheat-sheet/
 tags: [Web, InfoSec]
 ---
 
-# Informational Response (100 - 199)
+## Informational Response (100 - 199)
 
 100  -   Continue
 
@@ -18,7 +18,7 @@ tags: [Web, InfoSec]
 
 122  -   Reques­t-URI too long
 
-# Successful Response (200 - 299)
+## Successful Response (200 - 299)
 
 200  -   OK
 
@@ -40,7 +40,7 @@ tags: [Web, InfoSec]
 
 226  -   IM Used
 
-# Redirection Responses (300 - 399)
+## Redirection Responses (300 - 399)
 
 300  -   Multiple Choices
 
@@ -60,7 +60,7 @@ tags: [Web, InfoSec]
 
 308  -   Permanent Redirect
 
-# Client Errors (400 - 499)
+## Client Errors (400 - 499)
 
 400  -   Bad Request
 
@@ -120,7 +120,7 @@ tags: [Web, InfoSec]
 
 451  -   Unavailable For Legal Reasons
 
-# Server Errors (500 - 599)
+## Server Errors (500 - 599)
 
 500  -   Internal Server Error
 
@@ -140,7 +140,7 @@ tags: [Web, InfoSec]
 
 511  -   Network Authentication Required
 
-# WebDAV Status Codes
+## WebDAV Status Codes
 
 102  -   Processing
 

@@ -20,7 +20,7 @@ tags: [programming, python]
 
 <!-- blank line -->
 <figure class="video_container">
-  <video width="320" height="180" controls="true" allowfullscreen="true" poster="/images/introduction.jpg">
+  <video width="320" height="180" controls="true" allowfullscreen="true" poster="/images/introduction.png">
     <source src="/assets/video/introduction.mp4" type="video/mp4">
   </video>
 </figure>

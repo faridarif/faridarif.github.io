@@ -11,7 +11,9 @@ tags: [programming, python]
 <!-- blank line -->
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="/images/install&setup.jpg">
-    <source src="/assets/video/install&setup.mp4" type="video/mp4">
+    <video width="960" height="540" controls>
+      <source src="/assets/video/install&setup.mp4" type="video/mp4">
+    </video>
   </video>
 </figure>
 <!-- blank line -->

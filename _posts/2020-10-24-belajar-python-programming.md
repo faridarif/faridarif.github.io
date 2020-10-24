@@ -10,8 +10,8 @@ tags: [programming, python]
 
 <!-- blank line -->
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="images/install&setup.jpg">
-    <source src="assets/video/install&setup.mp4" type="video/mp4">
+  <video controls="true" allowfullscreen="true" poster="/images/install&setup.jpg">
+    <source src="/assets/video/install&setup.mp4" type="video/mp4">
   </video>
 </figure>
 <!-- blank line -->

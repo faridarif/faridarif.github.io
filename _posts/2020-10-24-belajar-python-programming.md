@@ -8,4 +8,11 @@ tags: [programming, python]
 
 ## Bahagian 1: Install & Setup
 
-![enter video description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/assets/video/install&setup.mp4){: .align-center}
+<!-- blank line -->
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="images/install&setup.jpg">
+    <source src="assets/video/install&setup.mp4" type="video/mp4">
+  </video>
+</figure>
+<!-- blank line -->
+

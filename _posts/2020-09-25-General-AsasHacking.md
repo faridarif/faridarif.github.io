@@ -30,7 +30,7 @@ smart tv,Whatsapp,Instagram,Google malah Internet sekalipun adalah program yang 
 menggunakan pengetahuan **programming**.Oleh itu,kemahiran **programming** atau **coding** sangat diperlukan
 bagi seseorang yang ingin menceburi bidang IT atau CyberSecurity apatahlagi untuk menjadi seorang hacker.
 Setiap programming language mempunyai fungsi yang tertentu dan syntax yang berbeza.Sebagai contoh,**PHP**
-digunakan untuk **web development** dan **javascript** pula untuk menjadikan sesuatu **website** itu lebih
+digunakan untuk **web development** dan **JavaScript** pula untuk menjadikan sesuatu **website** itu lebih
 interaktif dan dinamik dan menjalankan setiap fungsi pada website tersebut.Bagi sesiapa yang baru untuk
 belajar programming,mulakanlah dengan **python** language kerana **python** mudah difahami berbanding 
 programming language yang lain.**Kenapa programming penting dalam hacking?** Kerana dalam hacking,kita perlu

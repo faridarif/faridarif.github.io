@@ -1,5 +1,42 @@
 ---
-layout: home
+layout: single
 author_profile: true
 ---
 
+<!doctype html>
+
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+  <div id="particles-js">
+    <div class="container">
+      <div class="center">
+        <div class="row d-flex flex-wrap align-items-center">
+          <div class="col-md-5">
+            <div class="col-md">
+              <p class="header1">10g!c</p>
+              <p class="header3">Farid Arif</p>
+            </div>   
+          </div>
+        </div>    
+      </div>      
+    </div>        
+  </div>
+  
+  {% include scripts.html %}
+  
+  </body>
+</html>
+  
+   
+
+    
+
+    {% include scripts.html %}
+
+  </body>
+</html>

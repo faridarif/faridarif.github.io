@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: Home
-    url: /home/
+    url: https://faridarif.me/
   - title: "General"
     url: /general/
   - title: "InfoSec"

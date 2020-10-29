@@ -17,7 +17,6 @@ author_profile: true
     <p class="page__meta">
      <span class="page__meta-readtime">
       <i class="far fa-clock" aria-hidden="true"></i>
-      less than 1 minite read
      </span>
     </p>
     <p class="archive__item-excerpt" itemprop="description"></p>
@@ -31,7 +30,6 @@ author_profile: true
     <p class="page__meta">
      <span class="page__meta-readtime">
       <i class="far fa-clock" aria-hidden="true"></i>
-      1 minite read
      </span>
     </p>
     <p class="archive__item-excerpt" itemprop="description"></p>

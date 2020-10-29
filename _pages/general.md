@@ -14,11 +14,6 @@ author_profile: true
     <h2 class="archive__item-title no_toc" itemprop="headline">
      <a href="/general/asashacking/" rel="permalink">Perkara Asas Dalam Hacking</a>
     </h2>
-    <p class="page__meta">
-     <span class="page__meta-readtime">
-      <i class="far fa-clock" aria-hidden="true"></i>
-     </span>
-    </p>
     <p class="archive__item-excerpt" itemprop="description"></p>
    </article>
   </div>
@@ -27,11 +22,6 @@ author_profile: true
     <h2 class="archive__item-title no_toc" itemprop="headline">
      <a href="/general/belajar-python-programming/" rel="permalink">Belajar Python Programming</a>
     </h2>
-    <p class="page__meta">
-     <span class="page__meta-readtime">
-      <i class="far fa-clock" aria-hidden="true"></i>
-     </span>
-    </p>
     <p class="archive__item-excerpt" itemprop="description"></p>
    </article>
   </div>

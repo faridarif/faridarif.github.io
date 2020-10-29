@@ -1,6 +1,7 @@
 ---
+title: Home
+permalink: /home/
 layout: single
-author_profile: true
 ---
 
 <!doctype html>
@@ -29,14 +30,5 @@ author_profile: true
   
   {% include scripts.html %}
   
-  </body>
-</html>
-  
-   
-
-    
-
-    {% include scripts.html %}
-
   </body>
 </html>

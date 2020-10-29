@@ -4,7 +4,7 @@ permalink: /infosec/
 title: "InfoSec"
 author_profile: true
 ---
-<div id="particles-js"></div>
+
 <div class="archive">
  <h1 id="page-title" class="page__title"></h1>
  <h3 class="archive__subtitle">Posts</h3>
@@ -41,5 +41,3 @@ author_profile: true
 </div>
 
 
-
-<script src="/assets/js/particles.js"></script>

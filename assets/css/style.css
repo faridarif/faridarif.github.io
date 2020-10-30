@@ -17,6 +17,7 @@ canvas {
   vertical-align: bottom;
 } 
 
+
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
@@ -34,7 +35,7 @@ canvas {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 10em;
+    padding: 1em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

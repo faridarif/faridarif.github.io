@@ -9,25 +9,24 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-  <div id="particles-js">
-    <div class="container">
-      <div class="center">
-        <div class="row d-flex flex-wrap align-items-center">
-          <div class="col-md-5">
-            <div class="col-md">
-              <p class="header1">10g!c</p>
-              <p class="header3">Farid Arif</p>
-            </div>   
-          </div>
-        </div>    
-      </div>      
-    </div>        
-  </div>
-  
-  {% include scripts.html %}
+  <body>
+    {% include_cached skip-links.html %}
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
+    <div id="particles-js">
+      <div id="title">
+        <p class="header1">10g!c</p>
+        <p class="header3">Farid Arif</p>
+      </div>
+    </div>
+    
+    
+    <script src="{{ '/assets/js/particles.min.js' }}"></script>
+    <script src="{{ '/assets/js/particles.js' }}"></script>
+    <script src="{{ '/assets/js/app.js' }}"></script>
   
   </body>
 </html>

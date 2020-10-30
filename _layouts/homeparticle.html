@@ -23,6 +23,19 @@
       </div>
     </div>
     
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+    
     <script src="{{ '/assets/js/particles.min.js' }}"></script>
     <script src="{{ '/assets/js/particles.js' }}"></script>
     <script src="{{ '/assets/js/app.js' }}"></script>

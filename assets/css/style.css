@@ -134,7 +134,7 @@ canvas {
 }
 .header1 {
   font-family: 'Righteous', cursive;
-  font-size: $type-size-10;
+  font-size: $type-size-2;
 }
 
 .header2 {
@@ -144,5 +144,5 @@ canvas {
 
 .header3 {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
 }

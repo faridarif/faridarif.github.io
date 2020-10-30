@@ -133,7 +133,7 @@ canvas {
   transform: translate(-50%, -50%);
 }
 .header1 {
-  font-family: system-ui;
+  font-family: Times, Times New Roman, Georgia, serif;
   font-size: 8vw;
 }
 

@@ -197,7 +197,7 @@ canvas {
 
 .page__footer-copyright {
   font-family: $global-font-family;
-  font-size: $1.4vw;
+  font-size: 1.4vw;
 }
 
 .page__footer-follow {

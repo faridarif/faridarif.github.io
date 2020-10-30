@@ -87,7 +87,7 @@ canvas {
   .site-nav {
     margin-left: 0;
 
-    @include breakpoint($x-large) {
+    @include breakpoint($small) {
       float: right;
     }
   }

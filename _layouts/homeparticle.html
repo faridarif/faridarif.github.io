@@ -7,9 +7,9 @@
 
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+    <link rel="stylesheet" href="/assets/css/style.css">
     {% include head.html %}
     {% include head/custom.html %}
-    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

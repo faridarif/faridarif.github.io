@@ -7,9 +7,63 @@
 
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="utf-8">
+
+    {% include seo.html %}
+
+    <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+
+    <!-- https://t.co/dKP3o1e -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/skins/">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/vendor/">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_animations.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_archive.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_base.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_buttons.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_forms.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_masthead.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_mixins.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_navigation.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_notices.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_page.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_print.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_reset.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_search.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_sidebar.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_syntax.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_tables.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_utilities.scss">
+    <link rel="stylesheet" href="/_sass/minimal-mistakes/_variables.scss">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+    <!--[if IE]>
+      <style>
+        /* old IE unsupported flexbox fixes */
+        .greedy-nav .site-title {
+          padding-right: 3em;
+        }
+        .greedy-nav button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+        }
+      </style>
+    <![endif]-->
+
+    {% if site.head_scripts %}
+      {% for script in site.head_scripts %}
+        <script src="{{ script | relative_url }}"></script>
+      {% endfor %}
+    {% endif %}
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

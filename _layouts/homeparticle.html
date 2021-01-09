@@ -31,24 +31,7 @@
         <span class="type-cursor">|</span>
       </div>
     </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
-
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-    <script src="{{ '/assets/js/particles.min.js' }}"></script>
-    <script src="{{ '/assets/js/particles.js' }}"></script>
-    <script src="{{ '/assets/js/app.js' }}"></script>
+    
     <script>
        var typed = new Typed('#autotype', { strings: ["whoami", "id", "hostname", "uname -a", "ifconfig", "routel", "ss -uln", "ss -tln", "netstat -nupl", "netstat -ntpl"], typeSpeed: 75, backSpeed: 30, loop: true });
     </script>
@@ -70,7 +53,25 @@
           50% { opacity: 0.0; }
           100% { opacity: 1; }
         }
-    </style>  
+    </style>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+    <script src="{{ '/assets/js/particles.min.js' }}"></script>
+    <script src="{{ '/assets/js/particles.js' }}"></script>
+    <script src="{{ '/assets/js/app.js' }}"></script>  
 
   </body>
 </html>

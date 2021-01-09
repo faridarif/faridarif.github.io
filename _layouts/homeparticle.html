@@ -22,6 +22,14 @@
         <p class="header3">Welcome!</p>
         <p class="header2">Hello, I'm Farid Arif</p>
       </div>
+      <div class="autotype">
+        <span class="shell-red">root@kali</span>
+        :
+        <span class="shell-blue">~</span>
+        #
+        <span id="autotype"></span>
+        <span class="type-cursor">|</span>
+      </div>
     </div>
 
     {% if site.search == true %}
@@ -41,6 +49,28 @@
     <script src="{{ '/assets/js/particles.min.js' }}"></script>
     <script src="{{ '/assets/js/particles.js' }}"></script>
     <script src="{{ '/assets/js/app.js' }}"></script>
+    <script>
+       var typed = new Typed('#autotype', { strings: ["whoami", "id", "hostname", "uname -a", "ifconfig", "routel", "ss -uln", "ss -tln", "netstat -nupl", "netstat -ntpl"], typeSpeed: 75, backSpeed: 30, loop: true });
+    </script>
+    <style type="text/css" data-typed-js-css="true">
+      
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+    </style>  
 
   </body>
 </html>

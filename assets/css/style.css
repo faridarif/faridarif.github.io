@@ -41,11 +41,11 @@
 }  
 
 .autotype {
-  font-size: 20px;
+  font-size: 23px;
   font-family: 'Ubuntu Mono', monospace;
   position: absolute;
   margin-top: 100%;
-  left: 25%;
+  left: 19%;
   
 }
 

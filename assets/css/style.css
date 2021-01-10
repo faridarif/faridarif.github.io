@@ -26,6 +26,7 @@
   transform: translate(-50%, -50%);
   font-family: 'Ubuntu Mono', monospace;
   font-size: 5vw;
+  text-align: center;
 }
 
 .header3 {

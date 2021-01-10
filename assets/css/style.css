@@ -14,24 +14,21 @@
 
 /* ---- tile ---- */
 
-#title{
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  padding-bottom: 20em;
-  transform: translate(-50%, -50%);
-}
 .header1 {
   font-family: Times, Times New Roman, Georgia, serif;
   font-size: 8vw;
 }
 
 .header2 {
+  top: 24%;
+  left: 50%;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 5vw;
 }
 
 .header3 {
+  top: 24%;
+  left: 50%;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 9vw;
   color: #f00;

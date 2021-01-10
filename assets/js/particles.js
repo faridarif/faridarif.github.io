@@ -45,7 +45,7 @@ var pJS = function(tag_id, params){
         }
       },
       opacity: {
-        value: 1,
+        value: 0.5,
         random: false,
         anim: {
           enable: false,
@@ -55,7 +55,7 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
-        value: 20,
+        value: 3,
         random: false,
         anim: {
           enable: false,
@@ -68,7 +68,7 @@ var pJS = function(tag_id, params){
         enable: true,
         distance: 200,
         color: '#fff',
-        opacity: 0.5,
+        opacity: 0.3,
         width: 1
       },
       move: {

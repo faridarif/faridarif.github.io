@@ -21,7 +21,7 @@
 
 .header2 {
   position: absolute;
-  top: 24%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Ubuntu Mono', monospace;
@@ -30,7 +30,7 @@
 
 .header3 {
   position: absolute;
-  top: 24%;
+  top: 16%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Ubuntu Mono', monospace;
@@ -42,8 +42,9 @@
   font-size: 23px;
   font-family: 'Ubuntu Mono', monospace;
   position: absolute;
-  top: 43%;
-  left: 19%;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
   
 }
 

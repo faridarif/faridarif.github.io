@@ -41,8 +41,12 @@
 }  
 
 .autotype {
-  font-size: 5vm;
+  font-size: 20px;
   font-family: 'Ubuntu Mono', monospace;
+  position: absolute;
+  margin-top: 100%;
+  left: 25%;
+  
 }
 
 .shell-red {

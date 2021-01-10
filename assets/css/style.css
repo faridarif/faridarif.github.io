@@ -64,7 +64,8 @@
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  margin-top: 40em;
+  position: absolute;
+  top: 100%;
   color: $muted-text-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;

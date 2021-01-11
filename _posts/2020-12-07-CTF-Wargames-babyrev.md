@@ -6,9 +6,9 @@ permalink: /ctf-writeups/babyrev-wgmy/
 tags: [Hacking, CTF]
 ---
 
-### Wargames MY 2020 write-up
-### Category: Reverse Engineering
-### Challenge Name: babyrev
+## Wargames MY 2020 write-up
+### - Category: Reverse Engineering
+### - Challenge Name: babyrev
 
 
 ## Introduction

@@ -67,7 +67,7 @@ n = 3 x 5
 √n = 3.873 ,bermaksud √n menghampiri 3.Jadi,kita boleh cari nombor perdana yang paling hampir dengan 3.873 iaitu 3.Seterusnya,kita hanya perlu tahu nombor perdana yang seterusnya selepas 3.Iaitulah 5 atau kita boleh gunakan:
 
 ```
-*n* ÷ *p* = *q*
+n ÷ p = q
 15 ÷ 3 = 5
 ```
 

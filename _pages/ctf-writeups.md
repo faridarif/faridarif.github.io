@@ -12,6 +12,14 @@ author_profile: true
   <div class="list__item">
    <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc" itemprop="headline">
+     <a href="/ctf-writeups/babyrsa-wargames/" rel="permalink">Crypto(mathematics): BabyRSA (Wargames)</a>
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description"></p>
+   </article>
+  </div>
+  <div class="list__item">
+   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
      <a href="//ctf-writeups/babyrev-wgmy//" rel="permalink">Reverse Engineering: Babyrev (Wargames)</a>
     </h2>
     <p class="archive__item-excerpt" itemprop="description"></p>

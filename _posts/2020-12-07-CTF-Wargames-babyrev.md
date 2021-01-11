@@ -31,7 +31,7 @@ Dengan melihat *puts(s)* dan *strncmp(s)*,kita sudah boleh menjangkakan bahawa *
 
 - local_38 = user_input
 
-Jadi,kita akan focus kepada bagaimana *flag* di proses.Jika kita perhatikan dengan teliti,kita dapat simpulkan bahawa *flag* = *password* , kerana *user_input* mestilah sama dengan flag_string dan characters ke 27 hingga 31 dalam flag_strings ialah "15963".Okay,sekarang mari kita lihat *value* bagi SHUFFLE dan XOR
+Jadi,kita akan focus kepada bagaimana *flag* diproses.Jika kita perhatikan dengan teliti,kita dapat simpulkan bahawa *flag* = *password* , kerana *user_input* mestilah sama dengan flag_string dan characters ke 27 hingga 31 dalam flag_strings ialah "15963".Okay,sekarang mari kita lihat *value* bagi SHUFFLE dan XOR
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/shuffle.png){:.align-center}
 

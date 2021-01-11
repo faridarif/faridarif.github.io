@@ -23,7 +23,7 @@ Di *main() function*,kita boleh lihat bagaimana *executable file* itu mengawal i
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/main-func.png){:.align-center}
 
-Dengan melihat *puts(s)* dan *strncmp(s)*,kita sudah boleh jangka bahawa *executable file* ini di tulis dengan menggunakan *C language*.Jadi,ayuh kita *rename* beberapa *variables* supaya mudah difahami
+Dengan melihat *puts(s)* dan *strncmp(s)*,kita sudah boleh menjangkakan bahawa *executable file* ini di tulis dengan menggunakan *C language*.Jadi,ayuh kita *rename* beberapa *variables* supaya mudah difahami
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/rename-var.png){:.align-center}
 

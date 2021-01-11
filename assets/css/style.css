@@ -58,6 +58,14 @@
 .shell-blue {
   color: #009fff;
 }
+
+.myskils {
+  font-size: 21px;
+  font-family: 'Ubuntu Mono', monospace;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+}  
  
 
 /* ==========================================================================

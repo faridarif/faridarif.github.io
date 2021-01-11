@@ -45,7 +45,7 @@ XOR (HEX) : 56 06 06 01 09 52 06 03 51 04 57 07 52 07 50 06 06 06 07 54 57 56 02
 
 Contoh python *script* :
 
-```Python3
+```Python
 from z3 import *
 
 shuffle_bytes = 0x070415121d131b081f160f060a191811010302170d1405000c1c0b1a0e1e0910

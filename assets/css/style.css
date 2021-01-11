@@ -58,6 +58,10 @@
 .shell-blue {
   color: #009fff;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  
 
 /* ==========================================================================
    FOOTER

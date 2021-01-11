@@ -12,7 +12,7 @@ tags: [Hacking, CTF]
 
 ## Introduction
 
-Dalam *challenge* ini,kita diberikan satu *python script* yang mana *python script* ini *generate RSA key* dan *encrypt the flag.txt file*.Walaubagaimanapu,*challenge* ini adalah *challenge* yang ringkas dan mudah
+Dalam *challenge* ini,kita diberikan satu *python script* yang mana *python script* ini *generate RSA key* dan *encrypt the flag.txt file*.Walaubagaimanapun,*challenge* ini adalah *challenge* yang ringkas dan mudah
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/nano-chal.png){:.align-center} 
 

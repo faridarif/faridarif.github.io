@@ -40,6 +40,7 @@
 }  
 
 .autotype {
+  display: flex;
   font-size: 23px;
   font-family: 'Ubuntu Mono', monospace;
   position: absolute;

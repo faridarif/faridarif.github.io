@@ -1,14 +1,15 @@
 ---
-title: "Wargames MY 2020 write-up"
+title: "Reverse Engineering: Babyrev (Wargames)"
 date: 2020-12-07
 layout: single
 permalink: /ctf-writeups/babyrev-wgmy/
 tags: [Hacking, CTF]
 ---
 
+### Wargames MY 2020 write-up
 ### Category: Reverse Engineering
-
 ### Challenge Name: babyrev
+
 
 ## Introduction
 

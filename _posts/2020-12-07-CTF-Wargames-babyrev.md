@@ -17,7 +17,7 @@ Dalam *challenge* ini,kita diberikan satu *executable file* (ELF) yang mana *exe
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/elf-file.png){:.align-center}
 
-## Decompilig an ELF File
+## Decompiling an ELF File
 
 Di *main() function*,kita boleh lihat bagaimana *executable file* itu mengawal input dan format *flag* yang akan kita buru sebentar lagi
 

@@ -102,7 +102,7 @@ if str(status) == "sat":
 	print()
 ```
 
-*Running the script* dan kita akan dapat *password* dan *flag*
+*Run the script* dan kita akan dapat *password* dan *flag*
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/flag.png){:.align-center}
 

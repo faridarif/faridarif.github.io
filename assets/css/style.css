@@ -20,6 +20,7 @@
 }
 
 .header2 {
+  display: flex;
   position: absolute;
   top: 33%;
   left: 50%;
@@ -30,6 +31,7 @@
 }
 
 .header3 {
+  display: flex;
   position: absolute;
   top: 16%;
   left: 51%;

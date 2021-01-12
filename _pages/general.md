@@ -12,6 +12,14 @@ author_profile: true
   <div class="list__item">
    <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc" itemprop="headline">
+     <a href="/general/komponenhttp/" rel="permalink">Komponen Asas Dalam HTTP Request Dan HTTP Response</a>
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description"></p>
+   </article>
+  </div>
+  <div class="list__item">
+   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
      <a href="/general/capturetheflag/" rel="permalink">Capture The Flag ?</a>
     </h2>
     <p class="archive__item-excerpt" itemprop="description"></p>

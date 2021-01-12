@@ -40,7 +40,7 @@ Setiap flag akan diberikan point(mata).Kumpulan/individu yang paling banyak poin
 - F-Secure Cyber Security Competition Malaysia 2020
 - Pwntilldawn Online Battlefield 2019
 
-Untuk mengetahui lebih lanjut tentang pertandingan CTF samaada di Malaysia mahupun luar negara,online mahupun event,anda boleh pergi ke laman web ini https://ctftime.org/event/list/upcoming
+Untuk mengetahui lebih lanjut tentang pertandingan CTF samaada di Malaysia mahupun luar negara,online mahupun event,anda boleh pergi ke laman web ini <https://ctftime.org/event/list/upcoming>
 
 ## HackTheBox, TryHackMe, VulnHub
 

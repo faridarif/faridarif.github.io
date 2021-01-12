@@ -35,8 +35,8 @@ Setiap flag akan diberikan point(mata).Kumpulan/individu yang paling banyak poin
 
 ## CTF Di Malaysia
 
-- Wargames MY - http://wargames.my/2020/index.html
-- APU Battle of Hackers - https://fsec-ss.github.io/apuboh2019/index.html
+- Wargames MY - <http://wargames.my/2020/index.html>
+- APU Battle of Hackers - <https://fsec-ss.github.io/apuboh2019/index.html>
 - F-Secure Cyber Security Competition Malaysia 2020
 - Pwntilldawn Online Battlefield 2019
 

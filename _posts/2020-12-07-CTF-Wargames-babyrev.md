@@ -35,11 +35,11 @@ Jadi,kita akan focus kepada bagaimana *flag* diproses.Jika kita perhatikan denga
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/shuffle.png){:.align-center}
 
-SHUFLLE (HEX) : 07 04 15 12 1d 13 1b 08 1f 16 0f 06 0a 19 18 11 01 03 02 17 0d 14 05 00 0c 1c 0b 1a 0e 1e 09 10
+- SHUFLLE (HEX) : 07 04 15 12 1d 13 1b 08 1f 16 0f 06 0a 19 18 11 01 03 02 17 0d 14 05 00 0c 1c 0b 1a 0e 1e 09 10
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/XOR.png){:.align-center}
 
-XOR (HEX) : 56 06 06 01 09 52 06 03 51 04 57 07 52 07 50 06 06 06 07 54 57 56 02 55 06 01 52 53 54 0f 54 03
+- XOR (HEX) : 56 06 06 01 09 52 06 03 51 04 57 07 52 07 50 06 06 06 07 54 57 56 02 55 06 01 52 53 54 0f 54 03
 
 ## Calculating
 

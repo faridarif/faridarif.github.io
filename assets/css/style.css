@@ -22,7 +22,7 @@
 .header2 {
   display: flex;
   position: absolute;
-  top: 33%;
+  top: 31%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Ubuntu Mono', monospace;

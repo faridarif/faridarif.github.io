@@ -23,11 +23,15 @@ Jeopardy-style adalah jenis CTF yang berbentuk cabaran (challenge).Cabaran terse
 - Pwn
 - Reverse Engineering
 
-Anda/kumpulan perlu menyelesaikan cabaran yang diberi untuk mendapatkan flag yang tersembunyi didalam setiap cabaran tersebut.Setiap cabaran mempunyai flag yang berbeza-beza.Contoh format flag : flag{d0ck3R_!s_Gr3At_R1gHt?}
+Anda/kumpulan perlu menyelesaikan cabaran yang diberi untuk mendapatkan flag yang tersembunyi didalam setiap cabaran tersebut.Setiap cabaran mempunyai flag yang berbeza-beza.Contoh format flag : 
+
+- flag{d0ck3R_!s_Gr3At_R1gHt?}
 
 ## Attack-Defense
 
-Setiap kumpulan(team) akan diberikan sebuah server yang mempunyai *services* yang *vulnerable*.Bermaksud setiap server yang diberikan kepada setiap kumpulan(team) mempunyai kelemahan(vulnerability) yang tersendiri.Tugas setiap kumpulan(team) adalah untuk menggodam (hack) server kumpulan lain untuk mendapatkan flag yang tersembunyi didalam server setiap kumpulan itu.Dalam masa yang sama juga,anda/kumpulan perlu *"defense"* atau *"protect"* server kumpulan anda supaya tidak digodam oleh kumpulan lain.Jenis CTF ini boleh dianggap sebagai *"Battle of Hackers"*,kerana anda bertanding sesama *hackers*.Setiap flag adalah *unique*.Kebiasaannya flag adalah berbentuk *hash format*.Contoh format flag : flag{76420d7abbe073a20436d2fb14b15963}
+Setiap kumpulan(team) akan diberikan sebuah server yang mempunyai *services* yang *vulnerable*.Bermaksud setiap server yang diberikan kepada setiap kumpulan(team) mempunyai kelemahan(vulnerability) yang tersendiri.Tugas setiap kumpulan(team) adalah untuk menggodam (hack) server kumpulan lain untuk mendapatkan flag yang tersembunyi didalam server setiap kumpulan itu.Dalam masa yang sama juga,anda/kumpulan perlu *"defense"* atau *"protect"* server kumpulan anda supaya tidak digodam oleh kumpulan lain.Jenis CTF ini boleh dianggap sebagai *"Battle of Hackers"*,kerana anda bertanding sesama *hackers*.Setiap flag adalah *unique*.Kebiasaannya flag adalah berbentuk *hash format*.Contoh format flag : 
+
+- flag{76420d7abbe073a20436d2fb14b15963}
 
 ## Flag
 

@@ -6,9 +6,9 @@ permalink: /ctf-writeups/speedyquizy-wgmy/
 tags: [Hacking, CTF]
 ---
 
-### Category: Mobile
+### - Category: Mobile
 
-### Challenge Name: SpeedyQuizy
+### - Challenge Name: SpeedyQuizy
 
 ## Introduction
 
@@ -79,4 +79,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 - wgmy{418b3ea849ff3b93def86cfbc90440c1}
 
-### HAPPY HACKING
+### HAPPY HACKING !

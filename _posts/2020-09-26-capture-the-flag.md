@@ -50,4 +50,4 @@ Untuk mengetahui lebih lanjut tentang pertandingan CTF samaada di Malaysia mahup
 
 Hackthebox,Tryhackme dan Vulnhub adalah online platform yang popular yang membolehkan anda untuk mengasah,berlatih dan meningkatkan kemahiran anda dalam bidang CyberSecurity.Dalam bidang CyberSecurity ini,anda perlu sentiasa berlatih dan meningkatkan kemahiran anda untuk menjadi seorang yang berjaya dalam bidang ini.Oleh itu,platform sebegini dapat membantu anda menjadi seorang yang produktif dan lebih berkemahiran dalam bidang CyberSecurity ini
 
-### HAPPY HACKING 	
+### HAPPY HACKING !	

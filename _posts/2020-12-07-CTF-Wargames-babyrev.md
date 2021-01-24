@@ -106,4 +106,4 @@ if str(status) == "sat":
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/flag.png){:.align-center}
 
-### HAPPY HACKING 
+### HAPPY HACKING !

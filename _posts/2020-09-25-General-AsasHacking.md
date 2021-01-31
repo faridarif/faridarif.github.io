@@ -2,7 +2,7 @@
 title: "Ingin Menjadi Hacker? Baca dan fahamkan dahulu"
 date: 2020-09-25
 layout: single
-permalink: /general/ingin-menjadi-hacker-?-baca-dan-fahamkan-dahulu/
+permalink: /general/ingin-menjadi-hacker-baca-dan-fahamkan-dahulu/
 tags: [Hacking, Information Technology]
 ---
 

@@ -20,7 +20,7 @@ author_profile: true
   <div class="list__item">
    <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc" itemprop="headline">
-     <a href="/general/capturetheflag/" rel="permalink">Capture The Flag ?</a>
+     <a href="/general/capture-the-flag/" rel="permalink">Capture The Flag ?</a>
     </h2>
     <p class="archive__item-excerpt" itemprop="description"></p>
    </article>
@@ -28,7 +28,7 @@ author_profile: true
   <div class="list__item">
    <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc" itemprop="headline">
-     <a href="/general/ingin-menjadi-hacker-?-baca-dan-fahamkan-dahulu/" rel="permalink">Ingin Menjadi Hacker? Baca Dan Fahamkan Dahulu</a>
+     <a href="/general/ingin-menjadi-hacker-baca-dan-fahamkan-dahulu/" rel="permalink">Ingin Menjadi Hacker? Baca Dan Fahamkan Dahulu</a>
     </h2>
     <p class="archive__item-excerpt" itemprop="description"></p>
    </article>

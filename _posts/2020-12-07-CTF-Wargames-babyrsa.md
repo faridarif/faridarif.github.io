@@ -2,7 +2,7 @@
 title: "Crypto(mathematics): BabyRSA (Wargames)"
 date: 2020-12-07
 layout: single
-permalink: /ctf-writeups/babyrsa-wargames/
+permalink: /ctf-writeups/babyrsa-wgmy/
 tags: [Hacking, CTF]
 ---
 

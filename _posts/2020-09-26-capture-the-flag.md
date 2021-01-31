@@ -2,7 +2,7 @@
 title: "Capture The Flag ?"
 date: 2020-09-26
 layout: single
-permalink: /general/capturetheflag/
+permalink: /general/capture-the-flag/
 tags: [Hacking, Information Technology, CyberSecurity]
 ---
 

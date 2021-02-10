@@ -46,7 +46,7 @@ Sekarang ini barulah kita faham bahawa "follow the r a b b i t" itu bermaksud we
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-webpage-rabbit.png){:.align-center}
 
-Melihat pada *source webpage* itu,kita mendapati bahawa terdapat *username* dan juga *password*.
+Melihat pada *source webpage* itu,kita mendapati bahawa terdapat *username* dan juga *password* yang berkemungkinan kita boleh gunakan untuk "ssh"
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-webpage-rabbit-source.png){:.align-center}
  

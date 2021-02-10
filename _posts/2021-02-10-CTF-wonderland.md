@@ -56,11 +56,11 @@ Melihat pada *source webpage* itu,kita mendapati bahawa terdapat *username* dan 
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-ls.png){:.align-center}
 
-Terdapat "root.txt" file pada alice home directory "/home/alice" tetapi ianya milik "root" dan kita tiada *permission* ke atasnya.
+Terdapat "root.txt" file pada alice home directory *"/home/alice"* tetapi ianya milik "root" dan kita tiada *permission* ke atasnya.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-question-hint.png){:.align-center}
  
-Setelah melihat pada "question hint" itu,kita boleh simpulkan bahawa mungkin "user.txt" berada dalam root directory "/root".
+Setelah melihat pada "question hint" itu,kita boleh simpulkan bahawa mungkin "user.txt" berada dalam root directory *"/root"*.
  
 **User flag** :
  
@@ -94,7 +94,7 @@ Kita berjaya "escalate our privileges" kepada "rabbit" user !
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-teaparty.png){:.align-center}
 
-Didalam */home/rabbit*,terdapat satu "binary file" iaitu "teaParty".
+Didalam *"/home/rabbit"*,terdapat satu "binary file" iaitu "teaParty".
 
 Kita cuba pindahkan "taeParty" itu ke *local machine* supaya mudah untuk kita analisis "binary file" itu.
 

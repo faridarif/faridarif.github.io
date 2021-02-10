@@ -54,7 +54,7 @@ Melihat pada *source webpage* itu,kita mendapati bahawa terdapat *username* dan 
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-ls.png){:.align-center}
 
-Terdapat "root.txt" file pada *alice home directory" tetapi ianya milik "root" dan kita tiada *permission* ke atasnya.
+Terdapat "root.txt" file pada alice home directory "/home/alice" tetapi ianya milik "root" dan kita tiada *permission* ke atasnya.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-question-hint.png){:.align-center}
  

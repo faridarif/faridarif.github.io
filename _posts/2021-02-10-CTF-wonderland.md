@@ -60,7 +60,7 @@ Terdapat "root.txt" file pada alice home directory "/home/alice" tetapi ianya mi
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-question-hint.png){:.align-center}
  
-Setelah melihat pada "question hint" itu,kita boleh simpulkan bahawa mungkin "user.txt" berada dalam "root directory".
+Setelah melihat pada "question hint" itu,kita boleh simpulkan bahawa mungkin "user.txt" berada dalam root directory "/root".
  
 **User flag** :
  

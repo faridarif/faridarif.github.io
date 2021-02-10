@@ -114,7 +114,7 @@ Ianya adalah **ELF 64-bit** yang menandakan bahawa ianya adalah "Linux Executabl
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-nano-failed.png){:.align-center}
 
-Kita menghadapi masalah untuk "run" *nano* sebagai "rabbit".Oleh itu,kita kembali kepada user "alice" dan "create" satu file "date" didalam */home/alice*.
+Kita menghadapi masalah untuk "run" *nano* sebagai "rabbit".Oleh itu,kita kembali kepada user "alice" dan "create" satu file "date" didalam *"/home/alice"*.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-date.png){:.align-center}
   
@@ -126,7 +126,7 @@ Great, sekarang kita adalah "Hatter" !
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-ls-hatter.png){:.align-center}
 
-Kita menjumpai file "password.txt" dalam */home/hatter* yang mana ianya adalah *password* bagi user "hatter" kerana apabila kita "run" "sudo -l" dengan menggunakan password itu,ia menyatakan "Sorry, user hatter may not run sudo on wonderland." yang memberi maksud bahawa password yang kita masukkan itu adalah password yang betul.Jika password itu salah,maka ia sepatutnya akan menyatakan "Sorry, try again.".Oleh itu,kita boleh "login ssh" sebagai "hatter".
+Kita menjumpai file "password.txt" dalam *"/home/hatter"* yang mana ianya adalah *password* bagi user "hatter" kerana apabila kita "run" "sudo -l" dengan menggunakan password itu,ia menyatakan "Sorry, user hatter may not run sudo on wonderland." yang memberi maksud bahawa password yang kita masukkan itu adalah password yang betul.Jika password itu salah,maka ia sepatutnya akan menyatakan "Sorry, try again.".Oleh itu,kita boleh "login ssh" sebagai "hatter".
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-ssh-hatter.png){:.align-center}
 

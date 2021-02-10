@@ -64,7 +64,7 @@ Setelah melihat pada "question hint" itu,kita boleh simpulkan bahawa mungkin "us
  
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-ls-root.png){:.align-center}
  
-![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alcie-user-flag.png){:.align-center}
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-user-flag.png){:.align-center}
  
 ## PrivEsc
  

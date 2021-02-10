@@ -24,6 +24,8 @@ Pada *source code webpage* itu,terdapat satu *jpeg* file yang didalamnya tersemb
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-steghide.png){:.align-center}  
 
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-hint.png){:.align-center}
+
 Didalam *hint.txt* itu,tertulis "follow the r a b b i t".Buat masa ini,kita masih tidak tahu apa yang dimaksudkan dengan "follow the r a b b i t" itu.
 
 **Gobuster** :

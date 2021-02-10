@@ -16,7 +16,7 @@ Seperti biasa,kita mulakan dengan *nmap scan* :
 
 Hanya dua *ports* yang *open* iaitu *port* 22 (ssh) dan *port* 80 (http).
 
-Website :
+**Website** :
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-webpage.png){:.align-center}
 
@@ -26,7 +26,7 @@ Pada *source code webpage* itu,terdapat satu *jpeg* file yang didalamnya tersemb
 
 Didalam *hint.txt* itu,tertulis "follow the r a b b i t".Buat masa ini,kita masih tidak tahu apa yang dimaksudkan dengan "follow the r a b b i t" itu.
 
-Gobuster :
+**Gobuster** :
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-gobuster-r.png){:.align-center}
 
@@ -60,7 +60,7 @@ Terdapat "root.txt" file pada alice home directory "/home/alice" tetapi ianya mi
  
 Setelah melihat pada "question hint" itu,kita boleh simpulkan bahawa mungkin "user.txt" berada dalam "root directory".
  
-User flag :
+**User flag** :
  
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-ls-root.png){:.align-center}
  
@@ -82,7 +82,7 @@ Random.py :
  
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-ls-random-py.png){:.align-center}
  
-Rabbit :
+**Rabbit** :
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-sudo-command.png){:.align-center}
 
@@ -108,7 +108,7 @@ Ianya adalah **ELF 64-bit** yang menandakan bahawa ianya adalah "Linux Executabl
 
 **"Strings" command** menunjukkan bahawa terdapat "date command" yang di "execute" tanpa menetapkan sebarang "path".Oleh itu,kita boleh "abuse" "vulnerability" ini dengan mengeksport "our own $PATH".
 
-$PATH :
+**$PATH** :
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-nano-failed.png){:.align-center}
 
@@ -116,7 +116,7 @@ Kita menghadapi masalah untuk "run" *nano* sebagai "rabbit".Oleh itu,kita kembal
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-date.png){:.align-center}
   
-Hatter :
+**Hatter** :
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-hatter.png){:.align-center}
 
@@ -132,7 +132,7 @@ Setelah saya melakukan beberapa "basic enumeration",saya mendapati bahawa "perl"
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/alice-perl.png){:.align-center}
 
-Root :
+**Root** :
 
 **gtfobins** adalah rujukan terbaik.
 

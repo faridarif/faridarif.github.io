@@ -51,8 +51,8 @@ Networking atau jaringan digital membolehkan komputer atau alatan elektronik ber
 dengan alatan elektronik yang lain samaada melalui LAN (Local Area Network) atau WAN (Wide Area Network).
 Penting bagi seseorang yang menceburi bidang IT atau CyberSecurity untuk mempunyai pengetahuan tentang 
 **bagaimana Network berfungsi** kerana Networking adalah sebahagian daripada perkembangan teknologi pada
-hari ini.Kebanyakkan hacking seperti MITM (Man In The Middle) attack,LLMNR dan ARP Poisoning berlaku 
-di dalam network.
+hari ini.Kebanyakan *hacking techniques* seperti MITM (Man In The Middle) attack,LLMNR dan ARP Poisoning berlaku 
+di dalam LAN (Local Area Network).
         
 ## 4) Command Line Interface
       

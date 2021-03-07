@@ -46,6 +46,8 @@ Kita telah berjaya login sebagai *"admin"*
 
 "Fix issue with dev-staging-01.academy.htb" adalah "pending" dan ianya menunjukkan terdapat subdomain iaitu "dev-staging-01.academy.htb".Oleh itu,tambah *dev-staging-01.academy.htb* kedalam */etc/hots* seperti yang ditunjukkan dalam gambar di bawah
 
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/academy-etc-hosts.png){: .align-center}
+
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/academy-dev-staging.png){: .align-center}
 
 Ianya mendedahkan *sensitive informations* dan kita mendapati bahawa ianya menggunakan *PHP Laravel Framework*

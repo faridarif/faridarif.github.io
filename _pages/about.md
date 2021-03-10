@@ -18,6 +18,6 @@ Laman web ini juga disertakan dengan **CTF WriteUps** bagi sesiapa yang meminati
 
 Penafian :
 
-Sebarang informasi atau tutorial didalam laman web ini adalah bertujuan untuk memberi ilmu pengetahuan kepada 
+Segala isi kandung di dalam laman web ini adalah bertujuan untuk memberi ilmu pengetahuan kepada 
 masyarakat tentang perkembangan dunia IT.Saya **tidak akan bertanggungjawab** atas segala perkara yang 
 membabitkan pelanggaran undang-undang.

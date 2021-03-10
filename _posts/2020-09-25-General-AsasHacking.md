@@ -38,10 +38,10 @@ itu dan kita akan banyak melakukan scripting yang kesemua ini memerlukan kemahir
          
 ## 2) Operating System 
       
-Windows adalah operating system (OS) yang paling popular.Namun,terdapat pelbagai lagi operating system yang 
+Windows adalah *operating system* (OS) yang paling popular.Namun,terdapat pelbagai lagi *operating system* yang 
 lain seperti Linux distributions(Ubuntu,Arch,Parrot OS,Kali Linux),Unix dan sebagainya.Sebagai Penetration 
-Tester atau Security Engineer atau hacker,anda perlu mahir menggunakan pelbagai jenis operating system 
-kerana sesetengah operating system mempunyai file structure dan pengoperasian yang berbeza.
+Tester atau Security Engineer atau hacker,anda perlu mahir menggunakan pelbagai jenis *operating system* 
+kerana sesetengah *operating system* mempunyai struktur fail(*file structure*) dan pengoperasian yang berbeza.
          
 ## 3) Networking
       
@@ -55,11 +55,11 @@ di dalam LAN (Local Area Network).
 ## 4) Command Line Interface
       
 Anda juga perlu mahir menggunakan CLI (Command Line Interface) iaitu **mengawal program komputer**
-menggunakan command atau arahan dalam bentuk teks.Berbeza dengan GUI (Graphical User Interface),CLI 
-mempunyai command atau teks arahan yang tertentu untuk melaksanakan sesuatu arahan dan syntax yang berbeza
-untuk sesetengah operating system.Sebagai contoh, command "ls" yang mewakili "list" digunakan dalam Linux
+menggunakan *command* atau arahan dalam bentuk teks.Berbeza dengan GUI (Graphical User Interface),CLI 
+mempunyai command atau teks arahan yang tertentu untuk melaksanakan sesuatu arahan dan *syntax* yang berbeza
+untuk sesetengah *operating system*.Sebagai contoh, *command* "ls" yang mewakili "list" digunakan dalam Linux
 untuk mempamerkan kandungan yang terdapat di dalam sesebuah directory atau folder.Manakala Windows pula 
-menggunakan command "dir". 
+menggunakan *command* "dir". 
         
      
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/cli.png){: .align-center}

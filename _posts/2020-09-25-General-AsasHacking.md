@@ -31,10 +31,8 @@ menggunakan pengetahuan **programming**.Oleh itu,kemahiran **programming** atau 
 bagi seseorang yang ingin menceburi bidang IT atau CyberSecurity apatahlagi untuk menjadi seorang hacker.
 Setiap programming language mempunyai fungsi yang tertentu dan syntax yang berbeza.Sebagai contoh,**PHP**
 digunakan untuk **web development** dan **JavaScript** pula untuk menjadikan sesuatu **website** itu lebih
-interaktif dan dinamik dan menjalankan setiap fungsi pada website tersebut.Bagi sesiapa yang baru untuk
-belajar programming,mulakanlah dengan **python** language kerana **python** mudah difahami berbanding 
-programming language yang lain.**Kenapa programming penting dalam hacking?** Kerana dalam hacking,kita perlu
-membina exploit atau malicious software (malware) untuk mengeksploitasi sesuatu kelemahan (vulnerability) 
+interaktif dan dinamik dan menjalankan setiap fungsi pada website tersebut.Bagi sesiapa yang ingin mempelajari ilmu pengaturcaraan,mulakanlah dengan belajar konsep asas dalam pengaturcaraan seperti Struktur Kawalan (Control Structure),Jenis Data (Data Types),Algoritma (Algorithm),Pemboleh ubah (Variables) dan Struktur Data (Data Structure).**Kenapa programming penting dalam hacking?** Kerana dalam *hacking*,kita perlu
+membina *exploit* atau *malicious software (malware)* untuk mengeksploitasi sesuatu kelemahan (vulnerability) 
 itu dan kita akan banyak melakukan scripting yang kesemua ini memerlukan kemahiran **programming** atau
 **coding**.Kita juga akan berjumpa dengan banyak perkara yang berada dalam bentuk **code**.
          

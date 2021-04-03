@@ -54,14 +54,14 @@ WebVPN adalah *proxy feature* yang mudah untuk digunakan kerana ianya mudah alih
 
 Kebanyakan SSL VPN mempunyai native script language extensions mereka yang tersendiri.Sama seperti PHP extensions yang mengekalkan C atau Perl yang mengekalkan C++.Kita boleh menggunakan extensions ini bagi melakukan *encoding/decoding* untuk meningkatkan kecekapan yang menjadikannya "vulnerable".Ianya boleh membawa kepada "type confusion" diantara *languages* yang berlainan.Seperti yang kita semua tahu, *string operation* selalunya sukar bagi C language seperti *buffer size calculation*, *dangerous functions* dan *missunderstood functions*.
 
-```C
+```c
 ret = snprintf(buf, buf_size, format, ...) ;
 left_buf_size = buf_size - ret;
 ```
 
 Pengiraan seperti di atas boleh menyebabkan *integer overflow*.Type confusions:
 
-```Perl
+```perl
 my ($var) = @_;
 EXTENSION::C_funtion($var);
 ```
@@ -79,5 +79,7 @@ Disebabkan ianya mempunyai "different standards" bagi memproses perkara yang sam
 ```
 https://sslvpn/public/images/x/front_x/../../../../some.php
 ```
+
+
 
 Bersambung pada bahagian seterusnya (part 2)

@@ -12,6 +12,14 @@ author_profile: true
   <div class="list__item">
    <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc" itemprop="headline">
+     <a href="/infosec/hacking-zalora-ssl-vpn-part-2-exploit-the-vulnerabilities/" rel="permalink">Hacking ZALORA SSL VPN - Part 2: Exploit the Vulnerabilities</a>
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description"></p>
+   </article>
+  </div>
+  <div class="list__item">
+   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
      <a href="/infosec/hacking-zalora-ssl-vpn-part-1-system-analysis-attack-vectors-and-finding-bugs-pulse-secure-ssl-vpn/" rel="permalink">Hacking ZALORA SSL VPN - Part 1: System Analysis, Attack Vectors and Finding Bugs Pulse Secure SSL VPN</a>
     </h2>
     <p class="archive__item-excerpt" itemprop="description"></p>

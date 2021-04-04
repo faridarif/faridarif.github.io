@@ -94,7 +94,7 @@ Jika kita *stripped* atau "remove" *.json* extension, kita boleh "read" apa saha
 /migadmin/lang//../../../..//////////////////////////////bin/sh
 ```
 
-Seterusnya kita pergi ke */dev/cmdb/sslvpn\_websession*.Didalamnya terdapat :
+Seterusnya kita pergi ke */dev/cmdb/sslvpn\_websession*. Didalamnya terdapat :
 
 - Session token
 - IP address

@@ -24,7 +24,7 @@ Kaedah yang biasa digunakan untuk memecahkan *encryption* adalah dengan menganal
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/step-booting-process.png){: .align-center}
 
-KIta semua mengetahui bahawa *booting process* bermula dengan *bios*, *boot loader*, dan *kernel* yang kemudiannya melancarkan (initialize) operating system itu.Bagi Pulse Secure,ianya akan memaparkan "Press Enter to view or update your appliance settings." dan apabila kita menekan butang "Enter", ianya akan memaparkan satu lagi paparan yang membolehkan kita untuk ubah suai (modify) aturcaranya (settings).
+Kita semua mengetahui bahawa *booting process* bermula dengan *bios*, *boot loader*, dan *kernel* yang kemudiannya melancarkan (initialize) operating system itu.Bagi Pulse Secure,ianya akan memaparkan "Press Enter to view or update your appliance settings." dan apabila kita menekan butang "Enter", ianya akan memaparkan satu lagi paparan yang membolehkan kita untuk ubah suai (modify) aturcaranya (settings).
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/next-booting-process.png){: .align-center}
 

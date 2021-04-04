@@ -144,7 +144,7 @@ Jadi, kita *overwrite function table* dalam *struct SSL* yang dikenali sebagai *
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/ssl-structure.png){: .align-center}
 
-Proof of Concept
+Proof of Concept :
 
 ```php
 <?php

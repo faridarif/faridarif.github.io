@@ -57,12 +57,12 @@ figure.highlight {
 }
 
 .highlight .hll {
-  background-color: $base06;
+  background-color: #fff6fb;
 }
 .highlight {
   .c {
     /* Comment */
-    color: $base04;
+    color: #fff6fb;
   }
   .err {
     /* Error */
@@ -90,19 +90,19 @@ figure.highlight {
   }
   .cm {
     /* Comment.Multiline */
-    color: $base04;
+    color: #fff6fb;
   }
   .cp {
     /* Comment.Preproc */
-    color: $base04;
+    color: #fff6fb;
   }
   .c1 {
     /* Comment.Single */
-    color: $base04;
+    color: #fff6fb;
   }
   .cs {
     /* Comment.Special */
-    color: $base04;
+    color: #fff6fb;
   }
   .gd {
     /* Generic.Deleted */
@@ -123,7 +123,7 @@ figure.highlight {
   }
   .gp {
     /* Generic.Prompt */
-    color: $base04;
+    color: #fff6fb;
     font-weight: bold;
   }
   .gs {

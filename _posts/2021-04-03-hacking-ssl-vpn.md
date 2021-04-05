@@ -6,13 +6,13 @@ permalink: /infosec/hacking-zalora-ssl-vpn-part-1-system-analysis-attack-vectors
 tags: [Hacking , Infomation Security ]
 ---
 ## Pengenalan
-SSL VPN adalah salah satu daripada *Virtual Private Network* yang bertujuan melindungi aset korporat daripada terdedah kepada internet.SSL VPN juga adalah satu-satunya jalan untuk masuk ke dalam intranet (rangkaian tertutup) sesebuah oraganisasi korporat melalui internet atau *remote* (kawalan jarak jauh).Namun,bagaimana jika SSL VPN tersebut mempunyai kelemahan yang kritikal yang membolehkan penggodam untuk masuk ke dalam intranet sesebuah organisasi korporat itu? Hal ini membolehkan penggodam untuk mengambil alih (take over) semua pengguna yang bersambung (connecting) dengan pelayan SSL VPN tersebut.
+SSL VPN merupakan salah satu daripada *Virtual Private Network* yang bertujuan melindungi aset korporat daripada terdedah kepada internet.SSL VPN juga adalah satu-satunya jalan untuk masuk ke dalam intranet (rangkaian tertutup) sesebuah oraganisasi korporat melalui internet atau *remote* (kawalan jarak jauh).Namun,bagaimana jika SSL VPN tersebut mempunyai kelemahan yang kritikal yang membolehkan penggodam untuk masuk ke dalam intranet sesebuah organisasi korporat itu? Hal ini membolehkan penggodam untuk mengambil alih (take over) semua pengguna yang bersambung (connecting) dengan pelayan SSL VPN tersebut.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/ssl-vpn.png){: .align-center}
 
 ## Jailbreaking SSL VPN
 
-SSL VPN bersifat *black box* dan *closed source*.Kebanyakan SSL VPN hanya menyediakan "Restricted Shell".Oleh itu, "jailbreak" adalah satu-satunya pilihan bagi para penyelidik (researchers) untuk menjadikan "black box" itu kepada "great box".
+SSL VPN bersifat *black box* dan *closed source*.Kebanyakan SSL VPN hanya menyediakan "Restricted Shell".Oleh itu, "jailbreak" adalah satu-satunya pilihan bagi para penyelidik (researchers) untuk mengubah "black box" itu kepada "great box".
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/restricted-shell.png){: .align-center}
 
@@ -20,11 +20,11 @@ Namun bagaimana jika *disk* itu adalah *encrypted*?
 
 ![Linux Booting Process](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/linux-booting-process.png){: .align-center}
 
-Kaedah yang biasa digunakan untuk memecahkan *encryption* adalah dengan menganalisis atau "reverse" vmlinuz kernel untuk mendapatkan kunci bagi *encryption* itu (encryption key).Walaubagaimanapun,kita akan fokus kepada "stash" yang lain iaitu */sbin/init* yang menggunakan kaedah "memory forensics".
+Kaedah yang biasa digunakan untuk memecahkan *encryption* adalah dengan menganalisis atau "reverse engineer" vmlinuz kernel untuk mendapatkan kunci bagi *encryption* itu (encryption key).Walau bagaimanapun,kita akan fokus kepada "stash" yang lain iaitu */sbin/init* dengan menggunakan kaedah "memory forensics".
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/step-booting-process.png){: .align-center}
 
-Kita semua mengetahui bahawa *booting process* bermula dengan *bios*, *boot loader*, dan *kernel* yang kemudiannya melancarkan (initialize) operating system itu.Bagi Pulse Secure,ianya akan memaparkan "Press Enter to view or update your appliance settings." dan apabila kita menekan butang "Enter", ianya akan memaparkan satu lagi paparan yang membolehkan kita untuk ubah suai (modify) aturcaranya (settings).
+Kita semua mengetahui bahawa *booting process* bermula dengan *bios*, *boot loader*, dan *kernel* yang kemudiannya melancarkan (initialize) operating system itu.Bagi Pulse Secure,setelah proses pelancaran (initial process) selesai, ianya akan memaparkan "Press Enter to view or update your appliance settings." dan apabila kita menekan butang "Enter", ianya akan memaparkan satu lagi paparan yang membolehkan kita untuk ubah suai (modify) aturcaranya (settings).
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/next-booting-process.png){: .align-center}
 
@@ -32,7 +32,7 @@ Seterusnya, kita akan "suspend" *virtual machine* ini untuk seketika bagi mengim
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/perl-script.png){: .align-center}
 
-Kita boleh menggunkannya untuk "pop out" shell.KIta gantikan Perl script itu dengan */bin/sh* dan apabila kita menekan butang "Enter" sekali lagi, kita akan memperoleh *shell*.Dan sekarang kita telah memperoleh "full control of the system" dan seterusnya membolehkan kita untuk "debugging" dan menganalisis SSL VPN tersebut.
+Kita boleh menggunakannya untuk "pop out" *shell*.Kita gantikan Perl script itu dengan */bin/sh* dan apabila kita menekan butang "Enter" sekali lagi, kita akan memperoleh *shell*.Dan sekarang kita telah memperoleh "full control of the system" dan seterusnya membolehkan kita untuk "debugging" dan menganalisis SSL VPN tersebut.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/patch-memory.png){: .align-center}
 
@@ -52,7 +52,7 @@ WebVPN adalah *proxy feature* yang mudah untuk digunakan kerana ianya mudah alih
 
 ### Native script language extensions
 
-Kebanyakan SSL VPN mempunyai native script language extensions mereka yang tersendiri.Sama seperti PHP extensions yang mengekalkan C atau Perl yang mengekalkan C++.Kita boleh menggunakan extensions ini bagi melakukan *encoding/decoding* untuk meningkatkan kecekapan yang menjadikannya "vulnerable".Ianya boleh membawa kepada "type confusion" diantara *languages* yang berlainan.Seperti yang kita semua tahu, *string operation* selalunya sukar bagi C language seperti *buffer size calculation*, *dangerous functions* dan *missunderstood functions*.
+Kebanyakan SSL VPN mempunyai native script language extensions mereka yang tersendiri.Sama seperti PHP extensions yang mengekalkan C atau Perl yang mengekalkan C++.Kita boleh menggunakan extensions ini bagi melakukan *encoding/decoding* untuk meningkatkan kecekapan.Namun ia menjadikannya "vulnerable".Ianya boleh membawa kepada "type confusion" diantara *languages* yang berlainan.Seperti yang kita semua tahu, *string operation* selalunya sukar bagi C language seperti *buffer size calculation*, *dangerous functions* dan *missunderstood functions*.
 
 ```c
 ret = snprintf(buf, buf_size, format, ...) ;
@@ -83,3 +83,5 @@ https://sslvpn/public/images/x/front_x/../../../../some.php
 
 
 Bersambung pada bahagian seterusnya (part 2)
+
+### HAPPY HACKING !

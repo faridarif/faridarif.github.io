@@ -12,11 +12,11 @@ Fortinet memperkenalkan rangkaian produk SSL VPN mereka sebagai Fortigate SSL VP
 
 - All-in-one binary
 
-Kita mulakan penyelidikan kita dengan menyelongkar *file system*.Dalam */bin/*, kita mendapati bahawa kesemua fail didalamnya adalah *symbolic links* yang menyasarkan kepada */bin/init*.
+Kita mulakan penyelidikan kita dengan menyelongkar *file system*.Dalam */bin/*, kesemua fail didalamnya adalah *symbolic links* yang menyasarkan kepada */bin/init*.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/binary.png){: .align-center}
 
-Fortigate *compile* semua program dan konfigurasi dalam satu binari tungal (single binary), iaitu */bin/init*.Disebabkan itu, saiz *init* tersangatlah besar mencecah 500 MB dan mengandungi beribu *function* dan tiada satu pun *symbol*.Ianya hanya mengandungi program yang diperlukan untuk SSL VPN.Oleh itu, persekitarannya (environment) sangat merumitkan bagi penggodam untuk menganalisisnya bahkan tiada */bin/ls* dan juga */bin/cat*.
+Fortigate *compile* semua program dan konfigurasi dalam satu binari tunggal (single binary), iaitu */bin/init*.Disebabkan itu, saiz *init* tersangatlah besar mencecah 500 MB dan mengandungi beribu *function* dan tiada satu pun *symbol*.Ianya hanya mengandungi program yang diperlukan untuk SSL VPN.Oleh itu, persekitarannya (environment) sangat merumitkan bagi penggodam untuk menganalisisnya bahkan tiada */bin/ls* dan juga */bin/cat*.
 
 - Web daemon
 
@@ -38,11 +38,11 @@ Ketika ia *fetching language file* yang sepadan, ia membina *json file path* den
 snprintf(s, 0x40, "/migadmin/lang/%s.json", lang);
 ```
 
-Tiada perlindungan (protection), tetapi *file extension* bertambah secara automatik.Kita hanya boleh membaca fail *json*.Namun, kita boleh *abuse* ciri *snprintf* ini.Menurut laman *man*, ianya 	*writes at most size-1* pada *output string*.Oleh itu, kita hanya perlu "overflow" *buffer size* dan kemudiannya *.json* extension akan "stripped" dan seterusnya membolehkan kita untuk membaca apa sahaja fail yang kita kehendaki.
+Tiada perlindungan (protection), tetapi *file extension* `.json` itu diletakkan secara automatik.Kita hanya boleh membaca fail *json* sahaja.Namun, kita boleh *abuse* ciri *snprintf* ini.Menurut laman *man*, ianya 	*writes at most size-1* pada *output string*.Oleh itu, kita hanya perlu "overflow" *buffer size* dan kemudiannya *.json* extension itu akan "stripped" dan seterusnya membolehkan kita untuk membaca apa sahaja fail yang kita kehendaki.
 
 - PreAuth Heap Overflow
 
-Ketika mengekodkan kod entiti HTML, terdapat 2 peringkat.Pelayan terlebih dahulu mengira (calculate) panjang *buffer* yang diperlukan untuk *encoded string*.Kemudian ia dikod ke dalam *buffer*.Pada peringkat pengiraan, sebagai contoh, *encode string* bagi `<` adalah `&#60;` dan ini harus menepati 5 *bytes*.Sekiranya ia bertemu dengan sesuatu yang bermula dengan `&#` seperti `&#60;` , ia akan menganggap bahawa ada *token* yang sudah dikodkan dan menghitung panjangnya secara terus seperti ini :
+Ketika mengekodkan kod entiti HTML, terdapat 2 peringkat.Pelayan terlebih dahulu mengira (calculate) panjang *buffer* yang diperlukan untuk *encoded string*.Kemudian ia dikod ke dalam *buffer*.Pada peringkat pengiraan, sebagai contoh, *encode string* bagi `<` adalah `&#60;` dan ini harus menepati 5 *bytes*.Sekiranya ia bertemu dengan sesuatu yang bermula dengan `&#` seperti `&#60;` , ia akan menganggap bahawa terdapat *token* yang sudah dikodkan dan menghitung panjangnya secara terus seperti ini :
 
 ```bash
 c = token[idx];
@@ -88,13 +88,13 @@ r = requests.post('https://sslvpn:4433/message', data=data)
 
 - PreAuth Arbitrary File Reading
 
-Jika kita *stripped* atau "remove" *.json* extension, kita boleh "read" apa sahaja fail yang kita mahukan.
+Jika kita *stripped* atau "remove" extension `.json` itu, kita boleh "read" apa sahaja fail yang kita mahukan.
 
 ```
 /migadmin/lang//../../../..//////////////////////////////bin/sh
 ```
 
-Seterusnya kita pergi ke */dev/cmdb/sslvpn\_websession*. Didalamnya terdapat :
+Seterusnya kita pergi pula ke */dev/cmdb/sslvpn\_websession*. Didalamnya terdapat :
 
 - Session token
 - IP address
@@ -105,7 +105,7 @@ Fokus pada *plaintext password*, kita sudah memiliki *username* dan juga *passwo
 
 - PreAuth Heap Overflow
 
-Kita tidak dapat mengawal *heap* itu, tetapi secara tidak sengaja kita menjumpai sesuatu yang kerap kali muncul.KIta seterusnya "fuzz" pelayan itu untuk mendapatkan sesuatu maklumat yang berguna untuk kita.Kita mendapati program itu "crash" dan kita hampir mengawal *program counter*.
+Kita tidak dapat mengawal *heap* itu, tetapi secara tidak sengaja kita menjumpai sesuatu yang kerap kali muncul.Kita seterusnya akan "fuzz" pelayan itu untuk mendapatkan sesuatu maklumat yang berguna untuk kita.Kita mendapati program itu "crash" dan kita hampir mengawal *program counter*.
 
 ```bash
 Program received signal SIGSEGV, Segmentation fault.
@@ -140,7 +140,7 @@ int SSL_do_handshake(SSL *s)
 }
 ```
 
-Jadi, kita *overwrite function table* dalam *struct SSL* yang dikenali sebagai *method* dan apabila program itu cuba untuk "execute" `s->method->ssl_renegotiate_check(s, 0);` , ia akan "crash".Kita tujukan *SSL structure* dengan lambakan *normal request* kepada *heap* dan kemudiannya *overflow*  SSL structure itu.
+Jadi, kita perlu *overwrite function table* dalam *struct SSL* yang dikenali sebagai *method* dan apabila program itu cuba untuk "execute" `s->method->ssl_renegotiate_check(s, 0);` , ia akan "crash".Oleh itu,ita tujukan *SSL structure* dengan lambakan *normal request* kepada *heap* dan kemudiannya *overflow*  SSL structure itu.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/ssl-structure.png){: .align-center}
 
@@ -177,6 +177,6 @@ Proof of Concept :
 <a href="javascript:void(0);<?=$p;?>">xxx</a>
 ```
 
-Dan kemudian kita akan dapat *reverse shell* !
+Dan kemudiannya kita akan dapat *reverse shell* !
 
 ### HAPPY HACKING !

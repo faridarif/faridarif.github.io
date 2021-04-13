@@ -7,7 +7,6 @@ tags: [Hacking , Infomation Security ]
 ---
 
 credit : Orange Tsai
-
 ## Pengenalan
 SSL VPN merupakan salah satu daripada *Virtual Private Network* yang bertujuan melindungi aset korporat daripada terdedah kepada internet.SSL VPN juga adalah satu-satunya jalan untuk masuk ke dalam intranet (rangkaian tertutup) sesebuah oraganisasi korporat melalui internet atau *remote* (kawalan jarak jauh).Namun,bagaimana jika SSL VPN tersebut mempunyai kelemahan yang kritikal yang membolehkan penggodam untuk masuk ke dalam intranet sesebuah organisasi korporat itu? Hal ini membolehkan penggodam untuk mengambil alih (take over) semua pengguna yang bersambung (connecting) dengan pelayan SSL VPN tersebut.
 

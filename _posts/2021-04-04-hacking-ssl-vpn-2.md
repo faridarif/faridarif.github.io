@@ -1,10 +1,12 @@
 ---
-title: "Hacking ZALORA SSL VPN - Part 2: Exploit The Vulnerabilities"
+title: "Attacking SSL VPN - Part 2: Exploit The Vulnerabilities"
 date: 2021-04-04
 layout: single
-permalink: /infosec/hacking-zalora-ssl-vpn-part-2-exploit-the-vulnerabilities/
+permalink: /infosec/attacking-ssl-vpn-part-2-exploit-the-vulnerabilities/
 tags: [Hacking , Infomation Security ]
 ---
+
+credit : Orange Tsai
 
 ## Fortigate SSL VPN
 

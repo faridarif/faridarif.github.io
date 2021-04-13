@@ -7,7 +7,6 @@ tags: [Hacking , Infomation Security ]
 ---
 
 credit : Orange Tsai
-
 ## Fortigate SSL VPN
 
 Fortinet memperkenalkan rangkaian produk SSL VPN mereka sebagai Fortigate SSL VPN, yang lazimnya digunakan oleh perusahaan (enterprise) bersaiz sederhana.Terdapat lebih dari 480,000 pelayan yang beroperasi dalam internet dan "common" di rantau Asia dan juga Eropah.Kita boleh mengenal pastinya dengan menggunakan URL */remote/login* .Ciri-ciri teknikal yang ada pada Fortigate SSL VPN :

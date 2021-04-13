@@ -1,10 +1,13 @@
 ---
-title: "Hacking ZALORA SSL VPN - Part 1: System Analysis, Attack Vectors and Finding Bugs Pulse Secure SSL VPN"
+title: "Attacking SSL VPN - Part 1: System Analysis, Attack Vectors and Finding Bugs Pulse Secure SSL VPN"
 date: 2021-04-03
 layout: single
-permalink: /infosec/hacking-zalora-ssl-vpn-part-1-system-analysis-attack-vectors-and-finding-bugs-pulse-secure-ssl-vpn/
+permalink: /infosec/attacking-ssl-vpn-part-1-system-analysis-attack-vectors-and-finding-bugs-pulse-secure-ssl-vpn/
 tags: [Hacking , Infomation Security ]
 ---
+
+credit : Orange Tsai
+
 ## Pengenalan
 SSL VPN merupakan salah satu daripada *Virtual Private Network* yang bertujuan melindungi aset korporat daripada terdedah kepada internet.SSL VPN juga adalah satu-satunya jalan untuk masuk ke dalam intranet (rangkaian tertutup) sesebuah oraganisasi korporat melalui internet atau *remote* (kawalan jarak jauh).Namun,bagaimana jika SSL VPN tersebut mempunyai kelemahan yang kritikal yang membolehkan penggodam untuk masuk ke dalam intranet sesebuah organisasi korporat itu? Hal ini membolehkan penggodam untuk mengambil alih (take over) semua pengguna yang bersambung (connecting) dengan pelayan SSL VPN tersebut.
 

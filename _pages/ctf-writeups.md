@@ -20,6 +20,14 @@ author_profile: true
   <div class="list__item">
    <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     <h2 class="archive__item-title no_toc" itemprop="headline">
+     <a href="/ctf-writeups/netrunner-encryption-tenable-ctf/" rel="permalink">Netrunner Encryption (Tenable CTF)</a>
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description"></p>
+   </article>
+  </div>
+  <div class="list__item">
+   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
      <a href="/ctf-writeups/wonderland-thm/" rel="permalink">Wonderland (TryHackMe)</a>
     </h2>
     <p class="archive__item-excerpt" itemprop="description"></p>

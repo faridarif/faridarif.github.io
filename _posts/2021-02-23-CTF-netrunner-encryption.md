@@ -9,7 +9,7 @@ tags: [Hacking , CTF ]
 ## Tenable CTF 2021
 ###	 - Category: Cryptography
 
-Kita diberikan alamat URL http://167.71.246.232:8080/crypto.php yang membawa kita ke satu PHP *webpage*.Ianya mengambil input yang dimasukkan dan kemudian memaparkan output yang  berbentuk *encrypted string*.
+Kita diberikan alamat URL <http://167.71.246.232:8080/crypto.php> yang membawa kita ke satu PHP *webpage*.Ianya mengambil input yang dimasukkan dan kemudian memaparkan output yang  berbentuk *encrypted string*.
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/tenable-page.png){:.align-center}
 

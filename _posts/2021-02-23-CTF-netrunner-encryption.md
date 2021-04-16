@@ -128,7 +128,7 @@ Oleh kerana AES menggunakan blok data, input (cleartext) dan output (ciphertext)
 
 Sekarang kita akan lihat bagaimana pelaksanaan ini mengedalikan *padding*.
 
-!\[enter image description here\](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/tenable-padding.png){:.align-center}
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/tenable-padding.png){:.align-center}
 
 ```php
 function pad_data($data)

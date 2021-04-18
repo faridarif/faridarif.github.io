@@ -1,4 +1,4 @@
----
+--
 title: "PowerGrid (Vulnhub)"
 date: 2021-04-17
 layout: single
@@ -66,7 +66,7 @@ Kita boleh melakukan *brute forcing* pada *login page* ini.
 
 Seterusnya kita boleh log masuk dan kemudian terdapat satu lagi *login page* yang berlainan.Dengan menggunakan *username* dan *password* yang sama, kita berjaya log masuk ke laman tersebut.
 
-![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/powergrid-zmalil-page2.png){:.align-center}
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/powergrid-zmail-page2.png){:.align-center}
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/powergrid-zmail-page2-login.png){:.align-center}
 

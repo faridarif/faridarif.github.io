@@ -54,7 +54,7 @@ Halaman utama website :
 
 Kita hanya diberikan masa 180 minit atau 3 jam untuk 'root' *machine* ini.Walau bagaimanapun, terdapat 3 *potential user* iaitu `deez1`, `p48` dan `all2`.Pada 'description' di atas, ada dinyatakan bahawa "this group sometimes use weak passwords. We recommend you look at this attack vector first" yang bermaksud berkemungkinan kita boleh menggunakan kaedah *brute forcing*.
 
-![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/powergrid-gobuter.png){:.align-center}
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/powergrid-gobuster.png){:.align-center}
 
 Terdapat satu *web directory* iaitu `zmail` yang meminta kita untuk *login*.
 

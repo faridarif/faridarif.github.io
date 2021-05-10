@@ -6,7 +6,7 @@ permalink: /general/perisian-sumber-terbuka/
 tags: [Information Technology]
 ---
 
-![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/perisian-sumber-terbuka.png){: .align-center}
+![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/perisian-sumber-terbuka1.png){: .align-center}
 
 ## Pengenalan
 

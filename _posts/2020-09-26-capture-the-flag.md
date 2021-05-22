@@ -29,7 +29,7 @@ Anda/kumpulan perlu menyelesaikan cabaran yang diberi untuk mendapatkan flag yan
 
 ## Attack-Defense
 
-Setiap kumpulan(team) akan diberikan sebuah server yang mempunyai *services* yang *vulnerable*.Bermaksud setiap server yang diberikan kepada setiap kumpulan(team) mempunyai kelemahan(vulnerability) yang tersendiri.Tugas setiap kumpulan(team) adalah untuk menggodam server kumpulan lain untuk mendapatkan flag yang tersembunyi di dalam server setiap kumpulan itu.Dalam masa yang sama juga,anda/kumpulan perlu *"defense"* atau *"protect"* server kumpulan anda supaya tidak digodam oleh kumpulan lain.Jenis CTF ini boleh dianggap sebagai *"Battle of Hackers"*,kerana anda bertanding sesama "*hacker*".Setiap flag adalah *unique*.Kebiasaannya flag adalah berbentuk *hash format*.Contoh format flag : 
+Setiap kumpulan(team) akan diberikan sebuah server yang mempunyai *services* yang *vulnerable*.Bermaksud setiap server yang diberikan kepada setiap kumpulan(team) mempunyai kerentanan (vulnerability) yang tersendiri.Tugas setiap kumpulan(team) adalah untuk menggodam server kumpulan lain untuk mendapatkan flag yang tersembunyi di dalam server setiap kumpulan itu.Dalam masa yang sama juga,anda/kumpulan perlu *"defense"* atau *"protect"* server kumpulan anda supaya tidak digodam oleh kumpulan lain.Jenis CTF ini boleh dianggap sebagai *"Battle of Hackers"*,kerana anda bertanding sesama "*hacker*".Setiap flag adalah *unique*.Kebiasaannya flag adalah berbentuk *hash format*.Contoh format flag : 
 
 - flag{76420d7abbe073a20436d2fb14b15963}
 

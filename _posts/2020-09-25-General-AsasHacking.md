@@ -8,11 +8,11 @@ tags: [Hacking, Information Technology]
 
 ![enter image description here](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/images/403forbidden.png){: .align-center}
 
-**Hacking** adalah suatu kemahiran untuk mencari kelemahan (vulnerability) sesuatu sistem dan seterusnya
-mengeksploitasi kelemahan tersebut.Kemahiran seperti ini sangat diperlukan bagi memastikan kelemahan
+**Hacking** adalah suatu kemahiran untuk mencari kerentanan (vulnerability) sesuatu sistem dan seterusnya
+mengeksploitasi kerentanan tersebut.Kemahiran seperti ini sangat diperlukan bagi memastikan kerentanan
 (vulnerability) sesuatu sistem itu dapat dikurangkan.Oleh sebab itu,wujudlah pekerjaan seperti Penetration
 Tester.Penetration Tester akan mencari,mengeksploit dan kemudiannya akan mendokumenkan laporan tentang 
-kelemahan sesuatu sistem itu supaya kelemahan (vulnerability) itu dapat dibaiki dengan segera.Ianya adalah
+kelemahan sesuatu sistem itu supaya kerentanan (vulnerability) itu dapat dibaiki dengan segera.Ianya adalah
 suatu pekerjaan yang mulia kerana tujuannya adalah untuk memastikan keselamatan sesuatu sistem itu adalah
 terjamin.Namun untuk memiliki kemahiran **Hacking** ini,anda perlu belajar dan mahir dalam beberapa 
 perkara asas dalam **Computer Science** dan **Information Technology**

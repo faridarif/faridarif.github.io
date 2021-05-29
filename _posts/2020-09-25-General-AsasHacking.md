@@ -12,7 +12,7 @@ tags: [Hacking, Information Technology]
 mengeksploitasi kerentanan tersebut.Kemahiran seperti ini sangat diperlukan bagi memastikan kerentanan
 (vulnerability) sesuatu sistem itu dapat dikurangkan.Oleh sebab itu,wujudlah pekerjaan seperti Penetration
 Tester.Penetration Tester akan mencari,mengeksploit dan kemudiannya akan mendokumenkan laporan tentang 
-kelemahan sesuatu sistem itu supaya kerentanan (vulnerability) itu dapat dibaiki dengan segera.Ianya adalah
+kerentanan sesuatu sistem itu supaya kerentanan (vulnerability) itu dapat dibaiki dengan segera.Ianya adalah
 suatu pekerjaan yang mulia kerana tujuannya adalah untuk memastikan keselamatan sesuatu sistem itu adalah
 terjamin.Namun untuk memiliki kemahiran **Hacking** ini,anda perlu belajar dan mahir dalam beberapa 
 perkara asas dalam **Computer Science** dan **Information Technology**
@@ -31,10 +31,7 @@ menggunakan pengetahuan **programming**.Oleh itu,kemahiran **programming** atau 
 bagi seseorang yang ingin menceburi bidang IT atau CyberSecurity apatahlagi untuk menjadi seorang hacker.
 Setiap programming language mempunyai fungsi yang tertentu dan syntax yang berbeza.Sebagai contoh,**PHP**
 digunakan untuk **web development** dan **JavaScript** pula untuk menjadikan sesuatu **website** itu lebih
-interaktif dan dinamik dan menjalankan setiap fungsi pada website tersebut.Bagi sesiapa yang ingin mempelajari ilmu pengaturcaraan,mulakanlah dengan belajar konsep asas dalam pengaturcaraan seperti Struktur Kawalan (Control Structure),Jenis Data (Data Types),Algoritma (Algorithm),Pemboleh ubah (Variables) dan Struktur Data (Data Structure).**Kenapa programming penting dalam hacking?** Kerana dalam *hacking*,kita perlu
-membina *exploit* atau *malicious software (malware)* untuk mengeksploitasi sesuatu kelemahan (vulnerability) 
-itu dan kita akan banyak melakukan scripting yang kesemua ini memerlukan kemahiran **programming** atau
-**coding**.Kita juga akan berjumpa dengan banyak perkara yang berada dalam bentuk **code**.
+interaktif dan dinamik dan menjalankan setiap fungsi pada website tersebut.Bagi sesiapa yang ingin mempelajari ilmu pengaturcaraan,mulakanlah dengan belajar konsep asas dalam pengaturcaraan seperti Struktur Kawalan (Control Structure),Jenis Data (Data Types),Algoritma (Algorithm),Pemboleh ubah (Variables) dan Struktur Data (Data Structure).
          
 ## 2) Operating System 
       

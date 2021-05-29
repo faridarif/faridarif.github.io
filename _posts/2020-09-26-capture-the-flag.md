@@ -8,7 +8,7 @@ tags: [Hacking, Information Technology, CyberSecurity]
 
 ## Pengenalan
 
-*Capture The Flag* atau CTF adalah salah satu pertandingan dalam bidang CyberSecurity atau lebih dikenali sebagai *hacking competition*.Pertandingan ini memerlukan anda untuk menggodam sesuatu server yang diberikan atau menyelesaikan beberapa cabaran (challenge) yang berkaitan dengan cybersecurity untuk mendapatkan suatu *strings* yang dikenali sebagai flag.Flag tersebut tersembunyi di dalam server atau cabaran yang disediakan,dan anda perlu mencari flag tersebut.Flag tersebut menandakan bahawa anda telah berjaya menggodam atau telah berjaya menyelesaikan cabaran yang diberi.Untuk menyertai pertandingan ini,anda perlu mempunyai kemahiran menggodam (*hacking skills*) dan juga kemahiran menyelesaikan masalah (*problem solving skills*).Terdapat 2 jenis CTF,iaitu Jeopardy-style dan Attack-Defense.
+*Capture The Flag* atau CTF adalah salah satu pertandingan dalam bidang CyberSecurity atau lebih dikenali sebagai *hacking competition*.Pertandingan ini memerlukan anda untuk menggodam sesuatu server yang diberikan atau menyelesaikan beberapa cabaran (challenge) yang berkaitan dengan cybersecurity untuk mendapatkan suatu *strings* yang dikenali sebagai flag.Flag tersebut tersembunyi di dalam server atau cabaran yang disediakan,dan anda perlu mencari flag tersebut.Flag tersebut menandakan bahawa anda telah berjaya menggodam atau telah berjaya menyelesaikan cabaran yang diberi.Untuk menyertai pertandingan ini,anda perlu mempunyai kemahiran menyelesaikan masalah (*problem solving skills*).Terdapat 2 jenis CTF,iaitu Jeopardy-style dan Attack-Defense.
 
 ## Jeopardy-style
 

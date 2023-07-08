@@ -4,7 +4,6 @@ title: Basic Cisco Network Device Configuration
 date: 2023-04-29
 categories: ["Networking"]
 ---
-
 ## Switch Configuration
 1) Enter privilege mode :
 ```bash

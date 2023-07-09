@@ -123,7 +123,8 @@ For example :
 ```bash
 sudo mkdir /var/www/html/contacts
 sudo nano /var/www/html/contacts/contact.html
-
+```
+```html
 	<!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -168,7 +169,8 @@ sudo nano /var/www/html/<directory_name>/<file_name>.php
 For example :
 ```bash
 sudo nano /var/www/html/contacts/contact.php
-
+```
+```php
 	<?php
 	// database connection code
 	// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');

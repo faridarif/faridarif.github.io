@@ -5,7 +5,7 @@ date: 2023-04-25
 categories: ["Networking"]
 ---
 
-**Note: There are several other networking devices and equipment commonly used in various network environment. However, Repeater, Hub, Switch, and Router are the most basic and crucial networking devices used in various network environments. These devices form the building blocks of networking infrastructure, and their proper deployment and configuration are essential for efficient data transmission, secure communication, and reliable network connectivity. This blog post is not going to discuss in depth how these devices works.**
+**Note: There are several other networking devices and equipment commonly used in various network environment. However, Repeater, Hub, Switch, and Router are the most basic and crucial networking devices used in various network environments. These devices form the building blocks of networking infrastructure, and their proper deployment and configuration are essential for efficient data transmission, secure communication, and reliable network connectivity. This blog post is not going to discuss in detail how these devices works.**
 
 ## Repeater
 

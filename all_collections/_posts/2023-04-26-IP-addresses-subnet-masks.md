@@ -23,7 +23,7 @@ Each decimal number is called an **octet** because it represents **8 bits** of t
 
 To convert an IPv4 address to binary, we convert each octet to its 8-bit binary representation and concatenate them. For example, let's convert 192.168.1.1 to binary :
 ```
-IP Address            :  192   .  168  .   1    .   1
+IP Address           :  192   .  168  .   1    .   1
 Binary Representation : 11000000.1010000.00000001.00000001
 ```
 
@@ -35,23 +35,27 @@ In IPv4, IP address classes (classful IP addressing) were used to categorize IP 
 	- Default subnet mask : 255.0.0.0 ( /8 in CIDR notation ).
 	- Large number of networks (2^7 = 128) and a large number of hosts per network (2^24 -2 = 16,777,214).
 	- Support 16,777,214 host addresses.
-1) **Class B** :
+
+2) **Class B** :
 	- First two bits always set to 10.
 	- Range of the first octet (in decimal) : 128 to 191 (for example, 172.12.0.0).
 	- Default subnet mask : 255.255.0.0 ( /16 in CIDR notation ).
 	- Moderate number of networks (2^13 = 16,384) and a moderate number of hosts per network (2^16 -2 = 65,534).
 	- Support 65,534 host addresses.
-1) **Class C** :
+
+3) **Class C** :
 	- First three bits always set to 110.
 	- Range of the first octet (in decimal) : 192 to 223 (for example, 192.152.14.0).
 	- Default subnet mask : 255.255.255.0 ( /24 in CIDR notation ).
 	- Large number of networks (2^21 = 2,097,152) but a small number of hosts per network (2^8 - 2 =254).
 	- Support 254 host addresses.
-1) **Class D** :
+
+4) **Class D** :
 	- First four bits always set to 1110.
 	- Range of the first octet (in decimal) : 224 to 239.
 	- Class D addresses are reserved for multicast groups and not used for traditional unicast communication.
-2) **Class E** :
+
+5) **Class E** :
 	- First four bits always set to 1111.
 	- Range of the first octet : 240 to 255.
 	- Class E addresses were reserved for experimental purposes and not used for regular communication.
@@ -59,13 +63,13 @@ In IPv4, IP address classes (classful IP addressing) were used to categorize IP 
 Why do we subtract 2 when calculating the numbers of hosts per network above (for example: 2^8 - 2 = 254)? This subtraction is done to account for the network address and the broadcast address, which cannot be assigned to individual hosts. What is network address and broadcast address? \*Read the **Subnet Masks** section and the **Network Portion** section for more details.
 - **Network Address** : The network address is the first address in a subnet (all host bits are set to 0 in the network address) and represents the subnet itself. For example, in a subnet with a subnet mask of 255.255.255.0  ( /24 ), the network address would be the IP address with all the host bits set to 0 (such as 192.168.1.0). For example :
 ```
-IP Address            : 192.168.1.0
+IP Address           : 192.168.1.0
 Subnet Mask           : 255.255.255.0
 Subnet Mask in Binary : 11111111.11111111.11111111.00000000 = All host bits set to 0
 ```
 - **Broadcast Address** : The broadcast address is the last address in a subnet and is used to send a message to all hosts within that subnet. All host bits are set to 1 in the broadcast address. Using the same example subnet from Network Address above, the broadcast address would be 192.168.1.255. For example :
 ```
-IP Address            : 192.168.1.0
+IP Address           : 192.168.1.0
 Subnet Mask           : 255.255.255.0
 Subnet Mask in Binary : 11111111.11111111.11111111.11111111 = All host bits set to 1
 ```
@@ -85,12 +89,15 @@ Leading zeros within each group can be **omitted**, and consecutive groups of ze
 ```
 
 IPv6 defines several address types for different purposes :
+
 1) **Unicast Address** : Used to identify a single network interface. There are three types of unicast addresses :
 	- Global Unicast Address (Routable on the public internet)
 	- Link-Local Address (Used for communication on a local network segment, which similar to private addresses in IPv4)
 	- Unique Local Address (Similar to private IPv4 addresses, but globally unique within an organization or site)
+
 2) **Multicast Address** : Used for one-to-many communication. Packets sent to a multicast address are delivered to multiple hosts that have joined the corresponding multicast group.
-3) **Anycast Address** : Assigned to multiple interfaces, but a packet sent to an anycast address is delivered to the nearest (in terms of routing distance) of those interfaces.
+   
+4) **Anycast Address** : Assigned to multiple interfaces, but a packet sent to an anycast address is delivered to the nearest (in terms of routing distance) of those interfaces.
 
 In IPv6, the subnetting process is much simpler compared to IPv4 because IPv6 allocates a large number of address to each subnet. Subnetting is done by assigning a prefix length to the IPv6 address. The prefix length indicates the number of bits set to 1 in the subnet prefix (because of IPv6 is a 128-bit number). For example, a prefix length of **/64** means the **first 64 bits are the network portion**, and the **remaining 64 bits are hosts**.
 
@@ -110,7 +117,7 @@ In this subnet mask, the first 24 bits are set to 1, which means the first 24 bi
 
 To calculate the subnet address for a given IP address and subnet mask, perform a bitwise AND operation between the IP address and the subnet mask (The result will be the subnet address). For example, consider the IP address **192.168.1.50** and the subnet mask **255.255.255.224 ( /27 )** :
 ```
-IP Address     : 11000000.10101000.00000001.00110010 = 192.168.1.50
+IP Address    : 11000000.10101000.00000001.00110010 = 192.168.1.50
 Subnet Mask    : 11111111.11111111.11111111.11100000 = 255.255.255.224
 Bitwise AND    : 11000000.10101000.00000001.00100000 = 192.168.1.32
 
@@ -124,7 +131,7 @@ So, the subnet address for the IP address **192.168.1.50 with a /27 subnet mask 
 
 The network portion is the part of the address that identifies the specific network to which the device belongs. It helps routers and switches determine how to route packets between different networks. All devices within the **same network** share the **same network portion of their IP addresses**. The length of the network portion is determined by the subnet mask applied to the IP address. The 1s represent the network portion, and the 0s represent the host portion. For example, let's consider an IP address 192.168.1.1 with subnet mask of 255.255.255.0 ( /24 ). The subnet mask in binary is :
 ```
-IP Address           : 192.168.1.1
+IP Address          : 192.168.1.1
 IP Address in Binary : 11000000.10101000.00000001.00000001 = 192.168.1.1
 Subnet Mask          : 11111111.11111111.11111111.00000000 = 255.255.255.0
 Bitwise AND          : 11000000.10101000.00000001.00000000 = 192.168.1.0
@@ -133,7 +140,7 @@ Network Address      : 192.168.1.0
 ```
 In this case, the **first three octets (24 bits)** are the network portion, and the **last octet (8 bits)** is the host portion. So, the network portion or network address of this IP address is **192.168.1.0**. **The network address is the address that identifies an entire network**. **In term of words, "*network address*" is often used interchangeably with "*network portion*" when discussing IP addressing**. If, for example, an IP address of 192.168.1.231 with subnet mask of 255.255.255.224 ( /27 ) :
 ```
-IP Address           : 192.168.1.231
+IP Address          : 192.168.1.231
 IP Address in Binary : 11000000.10101000.00000001.11100111 = 192.168.1.231
 Subnet Mask          : 11111111.11111111.11111111.11100000 = 255.255.255.224
 Bitwise AND          : 11000000.10101000.00000001.11100000 = 192.168.1.224
@@ -152,14 +159,14 @@ The host portion is the part of the address that identifies a specific device wi
 
 To calculate the number of hosts in a subnet, count the number of host bits in the subnet mask (the number of bits set to 0), and use the formula **2^n - 2**, where n is the number of host bits. For example :
 ```
-Subnet Mask           : 255.255.255.0
+Subnet Mask          : 255.255.255.0
 Subnet Mask in Binary : 11111111.11111111.11111111.00000000
 
 Formula : 2^8 - 2 = 254 hosts    
 ```
 Which means there are 254 specific addresses available to be assigned to a device within this network. Another example :
 ```
-Subnet Mask           : 255.255.255.224
+Subnet Mask          : 255.255.255.224
 Subnet Mask in Binary : 11111111.11111111.11111111.11100000
 
 Formula : 2^5 - 2 = 30 hosts  

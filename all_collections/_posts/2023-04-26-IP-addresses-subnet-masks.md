@@ -147,7 +147,7 @@ Bitwise AND          : 11000000.10101000.00000001.11100000 = 192.168.1.224
 
 Network Address      : 192.168.1.224
 ```
-So, the network portion or network address of this IP address is **192.168.1.224**.
+So, the network portion or network address of this IP address is **192.168.1.224**. Is subnet address same as network address? The terms "**subnet address**" and "**network address**" are **not interchangeable**, as a network address refers to the overall address of a network, while a subnet address refers to a specific subnetwork within that larger network.
 
 ### Host Portion
 

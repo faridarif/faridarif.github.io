@@ -192,7 +192,7 @@ CIDR, which stands for Classless Inter-Domain Routing, is a method for represent
 - **Classful Addressing** : In the early days of the internet, IP addresses were assigned based on classful addressing, which divided the IP address space into fixed classes (A, B, C, D, and E). Each class had a **predetermined** number of bits for the **network portion** and the **host portion**. This fixed allocation led to significant wastage of IP address space, especially in cases where organizations were assigned larger address blocks that they needed.
 - **CIDR (Classless Addressing)** : CIDR, on the other hand, does away with the strict class-based divisions and allows for **variable-length subnet masks** (VLSM). With CIDR, an IP address is represented with both IP address and the subnet mask together, using the notation "/*prefix_length*". VLSM uses the notation 192.168.1.0/24 rather than the notation 192.168.1.0 255.255.255.0. For example, **192.168.1.0/24** indicates that the **first 24 bits are the network portion**, and the **remaining 8 bits are for hosts**.
 
-For example, an organization might need a subnet with only 30 hosts. Instead of allocation a whole Class C network with 254 usable addresses, CIDR allows for a /27 subnet. providing just the 30 addresses required. **No longer do we have class A, B, and C networks, where class A is always /8, class B is always /16, and class C is always /24.
+For example, an organization might need a subnet with only 30 hosts. Instead of allocation a whole Class C network with 254 usable addresses, CIDR allows for a /27 subnet. providing just the 30 addresses required. **No longer do we have class A, B, and C networks, where class A is always /8, class B is always /16, and class C is always /24**.
 
 ## References
 

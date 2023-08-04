@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Cisco Network Device Configurations
+title: Basic Cisco Network Device Configuration
 date: 2023-04-29
 categories: ["Networking"]
 ---

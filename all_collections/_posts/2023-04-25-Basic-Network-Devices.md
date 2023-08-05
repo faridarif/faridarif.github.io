@@ -32,7 +32,7 @@ Switch is a fundamental networking device used to connect multiple devices **wit
 - **Switching Paths** : A switch can establish multiple simultaneous communication paths between pairs of devices connected to it. This allows for simultaneous communication between different pairs of devices within the same network, without causing collisions, as each pair of devices has its dedicated communication path.
 - **Full-Duplex Communication** : Switches support full-duplex communication, which means that data can be sent and received simultaneously on a single connection.
 
-Switches have largely replaced hubs in modern network due to their intelligent and efficient data forwarding capabilities. By selectively forwarding data only to the relevant ports, switches significantly reduce network congestion, collisions, and unnecessary traffic.
+Switches have largely replaced hubs in modern networks due to their intelligent and efficient data forwarding capabilities. By selectively forwarding data only to the relevant ports, switches significantly reduce network congestion, collisions, and unnecessary traffic.
 
 ## Router
 

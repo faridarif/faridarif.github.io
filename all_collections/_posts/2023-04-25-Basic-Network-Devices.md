@@ -44,7 +44,7 @@ Router is a critical networking device that operates at the **network layer (Lay
 - **Dynamic Routing Protocols** : Routers use dynamic routing protocols (for example, OSPF, RIP, EIGRP, BGP) to exchange routing information with other routers, enabling them to automatically update their routing tables in response to network changes.
 - **Traffic Segmentation** : Routers can segment network traffic into different subnets, creating separate broadcast domains and logically isolating devices within those subnets.
 
-Routers are crucial for the proper functioning of the internet and many other complex networks. The direct data packets efficiently through the network, ensuring that information reaches its intended destination while taking the most optimal path possible.
+Routers are crucial for the proper functioning of the internet and many other complex networks. The data packets are directed efficiently through the network, ensuring that information reaches its intended destination while taking the most optimal path possible.
 
 ## References
 

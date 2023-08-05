@@ -5,7 +5,7 @@ date: 2023-07-09
 categories: [Web Development]
 ---
 
-**Note : The scope of this LAMP configuration guide is RedHat Linux operating system. The command or path of the file might be vary depending on Linux distribution (Linux distro) that you are using. Other Linux distro such as Ubuntu, might have different path of *php.ini* file. This configuration guide will assume that you are familiar with basic Linux command and have a basic understanding of dynamic website.**
+**Note : The scope of this LAMP configuration guide is the RedHat Linux operating system. The command or path of the file might vary depending on the Linux distribution (Linux distro) that you are using. Other Linux distro such as Ubuntu, might have different paths for the *php.ini* file. This configuration guide will assume that you are familiar with basic Linux commands and have a basic understanding of dynamic websites.**
 
 LAMP is an acronym that stands for Linux, Apache, MySQL/MariaDB, and PHP. It is a popular and widely-used technology stack for web development, especially in the open-source community.
 

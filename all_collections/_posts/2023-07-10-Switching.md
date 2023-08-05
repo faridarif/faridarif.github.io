@@ -217,6 +217,7 @@ EtherChannel, also known as link aggregation or port channeling, is a networking
 - **All ports in each EtherChannel link must be configured as Layer 2 ports (switchport)**.
 - **Each EtherChannel has a logical port channel interface**. A configuration applied to the port channel interface affects all physical interfaces that are assigned to that interface.
 There are two main configuration modes, which is *Static* (or unconditional EtherChannel) and *Dynamic*. In *static* mode, administrators manually select the links to be part of the EtherChannel group and configure them as such. Static mode configuration :
+
 1) Enter the interface configuration mode :
 - The "*range*" keyword allows us to select several interfaces and configure them all together.
 - This example uses interface FastEthernet 0/1 and FastEthernet 0/2.
@@ -255,6 +256,7 @@ Refer the table below :
 ![PAgP Table](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/PAgP-Table.png){:.align-center}
 
 The configuration of PAgP EtherChannel is similar to that *static* EtherChannel :
+
 1) Enter the interface configuration mode :
 ```bash
 Switch(config)# interface range FastEthernet 0/1 - 2
@@ -287,6 +289,7 @@ Refer the table below :
 ![LACP Table](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/LACP-Table.png){:.align-center}
 
 The configuration of LACP EtherChannel is similar to that *PAgP* and *static* EtherChannel :
+
 1) Enter the interface configuration mode :
 ```bash
 Switch(config)# interface range FastEthernet 0/1 - 2

@@ -21,7 +21,7 @@ Repeater is a basic networking device used to extend the range of a network by a
 
 Hub is often referred to as a "*multi-port repeater*" because it shares similarities with a repeater and has multiple ports to connect multiple devices. The primary function of a hub is to receive incoming data packet from one connected device and **broadcast** them or repeating the signal to all other connected devices. This broadcasting approach is often referred to as "*flooding*". Hubs also didn't understand the actual signal. This means that Hubs do not have the intelligence to determine which specific device should receive that data packet or signal. Both repeater and hub works at the **physical layer (Layer 1)** of the OSI model. Hubs operates in **half-duplex** mode. Only one device can send or receive data at a time.
 
-- Wi-Fi network is essentially a "*hub in the air*". While both hubs and Wi-Fi networks use broadcast communication, the main difference lies in the medium and the underlying technologies. Hub is a device used in wired network and Wi-Fi is a technology used in wireless network.
+- The Wi-Fi network is essentially a "*hub in the air*". While both hubs and Wi-Fi networks use broadcast communication, the main difference lies in the medium and the underlying technologies. Hubs are devices used in wired networks, and Wi-Fi is a technology used in wireless networks.
 
 ## Switch
 

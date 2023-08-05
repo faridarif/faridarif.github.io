@@ -5,7 +5,7 @@ date: 2023-07-10
 categories: ["Networking"]
 ---
 
-Switching is the process of **forwarding data frames** from one network device to another. It occurs **within a local network**, and is responsible for **creating paths for data to flow** efficiently between devices. Switches are the key devices that perform this function. In switches, there are different types of ports that serve **specific purposes** and **provide various functionalities* :
+Switching is the process of **forwarding data frames** from one network device to another. It occurs **within a local network**, and is responsible for **creating paths for data to flow** efficiently between devices. Switches are the key devices that perform this function. In switches, there are different types of ports that serve **specific purposes** and **provide various functionalities** :
 - **Access Ports** : Access ports are used to **connect end-user devices** (such as computers, printers, or IP phones) to the switch. They belong to a specific VLAN and carry untagged traffic for that VLAN. The frames sent and received through access ports are not tagged with VLAN IDs.
 - **Trunk Ports** : Trunk ports are used to **interconnect switches** and **carry traffic for multiple VLANs** simultaneously. They configured to support 802.1Q VLAN tagging, which means that frames leaving a trunk port are tagged with the appropriate VLAN ID.
 - **EtherChannel (Link Aggregation) Ports** : Etherchannel, also known as link aggregation, allows **multiple physical links** between switches to be **combined** into a **single logical link** for increased bandwidth and redundancy. Etherchannel aggregates the bandwidth of the individual links to create a **high-bandwidth channel** between switches.

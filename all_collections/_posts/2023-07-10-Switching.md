@@ -166,6 +166,7 @@ VTP is another **Cisco proprietary protocol** that is used to manage and **synch
 - **Transparent** : A VTP transparent switch does not participate in VTP advertisements or synchronization but can still create and modify VLANs locally.
 
 Basic VTP configuration :
+
 1) Set the name of the VTP administrative domain :
 - Example of domain name : CCNA, CISCO, CompanyA
 ```bash

@@ -33,7 +33,7 @@ VLANs (Virtual Local Area Networks) are a technology used to logically segment a
 
 ### Basic VLAN Configuration
 
-1. Creating VLAN :
+1) Creating VLAN :
 
 - *VLANs are identified by a VLAN ID - a number between 1 to 1005 (Normal Range) and 1006 to 4096 (Extended Range)*
 
@@ -41,13 +41,13 @@ VLANs (Virtual Local Area Networks) are a technology used to logically segment a
 Switch(config)# vlan <vlan-id>
 ```
 
-2. Name a VLAN :
+2) Name a VLAN :
 
 ```bash
 Switch(config-vlan)# name <vlan's name>
 ```
 
-3. Assigning port to VLAN :
+3) Assigning port to VLAN :
 
 - By default, all the interface port is belong to VLAN 1 (Default VLAN)
 - *By default, the Administrative Mode of the port is dynamic auto, so the best practice is to change it to become static port whether access mode or trunk mode*
@@ -58,7 +58,7 @@ Switch(config-if)# switchport mode access
 Switch(config-if)# switchport access vlan <vlan-id>
 ```
 
-4. Remove VLAN port assignment or changing VLAN port membership :
+4) Remove VLAN port assignment or changing VLAN port membership :
 
 - *After run this command, the interface port will automatically belong to VLAN 1 (Default VLAN)*
 
@@ -67,13 +67,13 @@ Switch(config)# int FastEthernet 0/1
 Switch(config-if)# no switchport access vlan
 ```
 
-5. Deleting VLAN :
+5) Deleting VLAN :
 
 ```bash
 Switch(config)# no vlan <vlan-id>
 ```
 
-6. Display information of switchport of the interface port :
+6) Display information of switchport of the interface port :
 
 ```bash
 Switch# show int switchport 
@@ -87,7 +87,7 @@ OR
 Switch# show int FastEthernet 0/1 switchport 
 ```
 
-7. Display VLAN database :
+7) Display VLAN database :
 
 ```bash
 Switch(config)# show vlan

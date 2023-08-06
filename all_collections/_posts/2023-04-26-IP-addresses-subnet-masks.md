@@ -196,14 +196,15 @@ For example, an organization might need a subnet with only 30 hosts. Instead of 
 
 ## References
 
+- [Udemy - The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
 - [IP Characteristics and IPv4 Address Format](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996258#content)
-- [Network vs Hots Portion](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/4482068#content)
-- [Class A and B Addresses](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/4482076#content)
-- [Class C, D, and E Addresses](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996268#content)
-- [Subnet Mask](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996284#content)
+- [Network vs Hots Portion - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/4482068#content)
+- [Class A and B Addresses - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/4482076#content)
+- [Class C, D, and E Addresses - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996268#content)
+- [Subnet Mask - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996284#content)
 - [Subnet Mask Cheat Sheet](https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/)
-- [CIDR Part 1 & 2](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996296#overview)
-- [CIDR Part 3](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/5579672#overview)
+- [CIDR Part 1 & 2 - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996296#overview)
+- [CIDR Part 3 - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/5579672#overview)
 - [Binary? How does that works?](https://www.youtube.com/watch?v=Toa5-1i4wRE&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=35)
 - [Binary IP Conversions](https://www.youtube.com/watch?v=TjW7yCqsHr8&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=36)
 - [Hexadecimal to Decimal](https://www.youtube.com/watch?v=bqF0zoGTaY0&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=38)

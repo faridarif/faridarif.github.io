@@ -157,7 +157,7 @@ Switch(config-if)# switchport nonegotiate
 Switch# show interface <interface-id> switchport
 ```
 
-**It's important to be aware of DTP's default behavior to avoid unintended trunk formation between switches**. To explicitly control whether a port should be a trunk or an access port, we can can manually configure the port as a trunk (using "*switchport mode trunk*") or as an access port (using "*switchport mode access*"). This will override DTP's default behavior for that specific port.
+**It's important to be aware of DTP's default behavior to avoid unintended trunk formation between switches**. To explicitly control whether a port should be a trunk or an access port, we can manually configure the port as a trunk (using "*switchport mode trunk*") or as an access port (using "*switchport mode access*"). This will override DTP's default behavior for that specific port.
 
 ### VTP (VLAN Trunking Protocol) & Configurations
 

@@ -132,7 +132,7 @@ DTP is a **Cisco proprietary protocol** that runs on Cisco switches and is used 
 - **Dynamic Auto** : In this mode, the switch will respond to DTP negotiation requests, but it won't actively initiate the negotiation. The port will only become a trunk port if the other end (switch port) initiates the negotiation and is configured as "*Dynamic Desirable*". Otherwise, it will become an access port.
 - **Dynamic Desirable** : In this mode, the switch will both respond to DTP negotiation requests and actively initiate negotiation if the other end (switch port) supports it. If the other end is in "*Dynamic Auto*", the port will become a trunk.
 
-Refer the table below :
+Refer to the table below :
 
 ![DTP Table](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/DTP-Table.png){:.align-center}
 
@@ -213,11 +213,11 @@ EtherChannel, also known as link aggregation or port channeling, is a networking
 - **Interface types cannot be mixed**. For example, FastEthernet and GigabitEthernet cannot be mixed within a single EtherChannel.
 - **All member links in an EtherChannel must have the same speed and duplex settings**.
 - **Different Cisco switch models have varying limits on the maximum number of interfaces that can be part of an EtherChannel group**. Ensure that configurations are within the supported limits.
-- **All member interfaces within an EtherChannel group should be assigned to the same set of VLANs**. Mismatched VLAN configurations can lead to traffic disruption or isolaation.
-- **Consistent configuration. The individual EtherChannel group member port configuration musbe consistent on both devices (Switch 1 and Switch 2)**. If the physical ports of one side are configured as trunks (on Switch 1), the physical ports of the other sided must also be configured as trunks (on Switch 2) within the same native VLAN.
+- **All member interfaces within an EtherChannel group should be assigned to the same set of VLANs**. Mismatched VLAN configurations can lead to traffic disruption or isolation.
+- **Consistent configuration. The individual EtherChannel group member port configuration must be consistent on both devices (for example, Switch 1 and Switch 2)**. If the physical ports of one side are configured as trunks (on Switch 1), the physical ports of the other side must also be configured as trunks (on Switch 2) within the same native VLAN.
 - **All ports in each EtherChannel link must be configured as Layer 2 ports (switchport)**.
 - **Each EtherChannel has a logical port channel interface**. A configuration applied to the port channel interface affects all physical interfaces that are assigned to that interface.
-There are two main configuration modes, which is *Static* (or unconditional EtherChannel) and *Dynamic*. In *static* mode, administrators manually select the links to be part of the EtherChannel group and configure them as such. Static mode configuration :
+There are two main configuration modes: *Static* (or unconditional EtherChannel) and *Dynamic*. In *static* mode, administrators manually select the links to be part of the EtherChannel group and configure them as such. Static mode configuration :
 
 1) Enter the interface configuration mode :
 - The "*range*" keyword allows us to select several interfaces and configure them all together.
@@ -249,10 +249,10 @@ In *dynamic* mode, protocols such as LACP (Link Aggregation Control Protocol) or
 
 ### PAgP (Port Aggregation Protocol)
 
-PAgP is a **Cisco proprietary** protocol that aids in the automatic creation of EtherChannel links. When an EtherChannel link is configured using PAgP, PAgP packets are sent between EtherChannel-capable ports to negotiate the forming of a channel. When PAgP identifies matched Ethernet links, it groups the links into an EtherChannel. The EtherChannel is then added to the spanning tree as a single port. PAgP paackets are sent every 30 seconds. PAgP checks for configuration consistency and manages link additions and failures between two switches. It ensures that when an EtherChannel is created, all ports have the same type of configuration. The modes for PAgP as follows :
-- **Desirable** : This mode places an interface in an active negotiating state in which the interface initiates negotiations with other interfaces by sending PAgP packets.
-- **Auto** : This mode places an interface in a passive negotiating state in which the interface responds to the PAgP packets that it receives but does not initiate PAgP negotiation.
-Refer the table below :
+PAgP is a **Cisco proprietary** protocol that aids in the automatic creation of EtherChannel links. When an EtherChannel link is configured using PAgP, PAgP packets are sent between EtherChannel-capable ports to negotiate the forming of a channel. When PAgP identifies matched Ethernet links, it groups the links into an EtherChannel. The EtherChannel is then added to the spanning tree as a single port. PAgP packets are sent every 30 seconds. PAgP checks for configuration consistency and manages link additions and failures between two switches. It ensures that when an EtherChannel is created, all ports have the same type of configuration. The modes for PAgP as follows :
+- **Desirable** : This mode places an interface in an active negotiating state, in which the interface initiates negotiations with other interfaces by sending PAgP packets.
+- **Auto** : This mode places an interface in a passive negotiating state, in which the interface responds to the PAgP packets that it receives but does not initiate PAgP negotiation.
+Refer to the table below :
 
 ![PAgP Table](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/PAgP-Table.png){:.align-center}
 
@@ -282,10 +282,10 @@ Switch(config-if)# switchport trunk allowed vlan 1,2,10,20
 
 ### LACP (Link Aggregation Control Protocol)
 
-LACP is part of an **IEEE specification (802.3ad)** that allows EtherChannel. LACP allows a switch to negotiate an automatic bundle by sending LACP packets to the other switch. Because LACP is an IEEE standart, it **can be used** to facilitate EtherChannels in **multivendor environments**. LACP provides the **same negotiation benefits** as **PAgP**. LACP helps create the EtherChannel link by detecting the configuration of each side and making sure that they are compatible so that the EtherChannel link can be enabled when needed. The modes for LACP :
+LACP is part of an **IEEE specification (802.3ad)** that allows EtherChannel. LACP allows a switch to negotiate an automatic bundle by sending LACP packets to the other switch. Because LACP is an IEEE standard, it **can be used** to facilitate EtherChannels in **multivendor environments**. LACP provides the **same negotiation benefits** as **PAgP**. LACP helps create the EtherChannel link by detecting the configuration of each side and making sure that they are compatible so that the EtherChannel link can be enabled when needed. The modes for LACP :
 - **Active** : This mode places a port in an active negotiating state. In this state, the port initiates negotiations with other ports by sending LACP packets.
 - **Passive** : This mode places a port in a passive negotiating state. In this state, the port responds to the LACP packets that it receives but does not initiate LACP packet negotiation.
-Refer the table below :
+Refer to the table below :
 
 ![LACP Table](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/LACP-Table.png){:.align-center}
 
@@ -341,7 +341,7 @@ Switch# show intereface etherchannel
 ## References
 
 - [VLANs](https://www.youtube.com/watch?v=j4u1IY71Wto)
-- [Chapter 2: Scaling VLANs - Cisco NetAcad Powerpoint Presentation Silde](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/miscellaneous/Chapter%202%20Scaling%20VLANs.pptx)
+- [Chapter 2: Scaling VLANs - Cisco NetAcad Powerpoint Presentation Slide](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/miscellaneous/Chapter%202%20Scaling%20VLANs.pptx)
 - [Chapter 6: VLANs - Cisco NetAcad Powerpoint Presentation Slide](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/miscellaneous/Chapter%206%20VLAN.pptx)
 - [Udemy - The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
 - [YouTube - CCNA Dynamic Trunking Protocol (DTP) Quiz](https://www.youtube.com/watch?v=wLqiUC4FMA8)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Cisco Network Device Configuration
+title: Basic Cisco Switch and Router Configuration
 date: 2023-04-29
 categories: ["Networking"]
 ---

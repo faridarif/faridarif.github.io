@@ -49,8 +49,8 @@ Switch(config-vlan)# name <vlan's name>
 
 3) Assigning port to VLAN :
 
-- By default, all the interface ports belong to VLAN 1 (Default VLAN)
-- *By default, the Administrative Mode of the port is dynamic auto, so the best practice is to change it to become static port whether access mode or trunk mode*
+- By default, all the interface ports belong to VLAN 1 (Default VLAN).
+- *By default, the Administrative Mode of the port is dynamic auto, so the best practise is to change it to become a static port, whether in access mode or trunk mode*.
 
 ```bash
 Switch(config)# int FastEthernet 0/1
@@ -60,7 +60,7 @@ Switch(config-if)# switchport access vlan <vlan-id>
 
 4) Remove VLAN port assignment or changing VLAN port membership :
 
-- *After run this command, the interface port will automatically belong to VLAN 1 (Default VLAN)*
+- *After running this command, the interface port will automatically belong to VLAN 1 (Default VLAN).*
 
 ```bash
 Switch(config)# int FastEthernet 0/1
@@ -73,7 +73,7 @@ Switch(config-if)# no switchport access vlan
 Switch(config)# no vlan <vlan-id>
 ```
 
-6) Display information of switchport of the interface port :
+6) Display information about the switchport of the interface port :
 
 ```bash
 Switch# show int switchport 

@@ -49,7 +49,7 @@ Switch(config-vlan)# name <vlan's name>
 
 3) Assigning port to VLAN :
 
-- By default, all the interface port is belong to VLAN 1 (Default VLAN)
+- By default, all the interface ports belong to VLAN 1 (Default VLAN)
 - *By default, the Administrative Mode of the port is dynamic auto, so the best practice is to change it to become static port whether access mode or trunk mode*
 
 ```bash

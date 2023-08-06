@@ -205,7 +205,7 @@ In-band management refers to managing network devices over the same data network
 
 ### Out-of-Band Management
 
-Out-of-band management involves managing network through a **separate dedicated network path** that is **independent** of the **primary data network**. It provides a secure dedicated alternate access method into an IT network infrastructure to administer connected devices and IT assets without using the corporate LAN (in corporate environment). Administrators access devices' management interface using separate network connections and IP addressing specifically designated for out-of-band management.
+Out-of-band management involves managing network through a **separate dedicated network path** that is **independent** of the **primary data network**. It provides a secure dedicated alternate access method into an IT network infrastructure to administer connected devices and IT assets without using the corporate LAN (in corporate environment). Network administrators access devices' management interface using separate network connections and IP addressing specifically designated for out-of-band management.
 
 ## EtherChannel (Link Aggregation)
 

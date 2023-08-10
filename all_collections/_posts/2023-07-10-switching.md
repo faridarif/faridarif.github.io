@@ -4,6 +4,7 @@ title: Switching (Concepts, Protocols, & Configurations)
 date: 2023-07-10
 categories: ["Networking"]
 ---
+**Note: Before diving into switching concepts, it's important to have a solid understanding of some fundamental networking concepts including : Network Devices, Network Topologies, IP Addressing and Subnetting, OSI Model. These foundational concepts provide a solid framework for understanding the principles and technologies involved in networking and subsequently, switching.**
 
 Switching is the process of **forwarding data frames** from one network device to another. It occurs **within a local network**, and is responsible for **creating paths for data to flow** efficiently between devices. Switches are the key devices that perform this function. In switches, there are different types of ports that serve **specific purposes** and **provide various functionalities** :
 - **Access Ports** : Access ports are used to **connect end-user devices** (such as computers, printers, or IP phones) to the switch. They belong to a specific VLAN and carry untagged traffic for that VLAN. The frames sent and received through access ports are not tagged with VLAN IDs.

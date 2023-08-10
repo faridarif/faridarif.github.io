@@ -4,7 +4,7 @@ title: Switching (Concepts, Protocols, & Configurations)
 date: 2023-07-10
 categories: ["Networking"]
 ---
-**Note: Before diving into switching concepts, it's important to have a solid understanding of some fundamental networking concepts including : Network Devices, Network Topologies, IP Addressing and Subnetting, and OSI Model. These foundational concepts provide a solid framework for understanding the principles and technologies involved in networking and subsequently, switching.**
+**Note: This blog post explains the fundamental switching concepts and basic configurations. Before diving into switching concepts, it's important to have a solid understanding of some fundamental networking concepts including : Network Devices, Network Topologies, IP Addressing and Subnetting, and OSI Model. These foundational concepts provide a solid framework for understanding the principles and technologies involved in networking and subsequently, switching.**
 
 Switching is the process of **forwarding data frames** from one network device to another. It occurs **within a local network**, and is responsible for **creating paths for data to flow** efficiently between devices. Switches are the key devices that perform this function. In switches, there are different types of ports that serve **specific purposes** and **provide various functionalities** :
 - **Access Ports** : Access ports are used to **connect end-user devices** (such as computers, printers, or IP phones) to the switch. They belong to a specific VLAN and carry untagged traffic for that VLAN. The frames sent and received through access ports are not tagged with VLAN IDs.
@@ -342,7 +342,7 @@ Switch# show intereface etherchannel
 ## References
 
 - [VLANs (Complete Chapter) - Cisco Docs](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/5_x/nx-os/layer2/configuration/guide/Cisco_Nexus_7000_Series_NX-OS_Layer_2_Switching_Configuration_Guide_Release_5-x_chapter4.html)
-- [VLANs](https://www.youtube.com/watch?v=j4u1IY71Wto)
+- [YouTube - VLANs](https://www.youtube.com/watch?v=j4u1IY71Wto)
 - [Configuring VLAN Trunks - Cisco Docs](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst1000/software/releases/15_2_7_e/configuration_guides/vlan/b_1527e_vlan_c1000_cg/configuring_vlan_trunks.pdf)
 - [VLANs and Trunking - Cisco Articles](https://www.ciscopress.com/articles/article.asp?p=29803&seqNum=3)
 - [Cisco Networking Academy's Introduction to VLANs (Refer to the Contents - Complete chapter of VLANs)](https://www.ciscopress.com/articles/article.asp?p=2181837&seqNum=8)

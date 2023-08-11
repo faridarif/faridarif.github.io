@@ -48,8 +48,12 @@ Routers are crucial for the proper functioning of the internet and many other co
 
 ## References
 
-- [https://www.hamradioschool.com/post/simplex-duplex-offset-and-split](https://www.hamradioschool.com/post/simplex-duplex-offset-and-split)
-- [https://www.youtube.com/watch?v=CdoG4tWNPqs&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=26](https://www.youtube.com/watch?v=CdoG4tWNPqs&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=26)
-- [https://www.youtube.com/watch?v=gdV0T91Bvt4&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=27](https://www.youtube.com/watch?v=gdV0T91Bvt4&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=27)
-- [https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/18250158#content](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/18250158#content)
-- [https://www.cloudflare.com/learning/network-layer/what-is-a-network-switch/](https://www.cloudflare.com/learning/network-layer/what-is-a-network-switch/)
+- [Repeater](https://en.wikipedia.org/wiki/Repeater)
+- [Ethernet hub](https://en.wikipedia.org/wiki/Ethernet_hub)
+- [Network switch](https://en.wikipedia.org/wiki/Network_switch)
+- [Router (computing)](https://en.wikipedia.org/wiki/Router_(computing))
+- [Simplex, Duplex, Offset and Split](https://www.hamradioschool.com/post/simplex-duplex-offset-and-split)
+- [YouTube - Network Devices Part 1](https://www.youtube.com/watch?v=CdoG4tWNPqs&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=26)
+- [YouTube - Network Devices Part 2](https://www.youtube.com/watch?v=gdV0T91Bvt4&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=27)
+- [Udemy - The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
+- [What is a network switch? Switch vs. router](https://www.cloudflare.com/learning/network-layer/what-is-a-network-switch/)

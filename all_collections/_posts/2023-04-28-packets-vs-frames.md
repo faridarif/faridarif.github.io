@@ -39,4 +39,10 @@ Frames are essential for data transmission **within a network**. When a device w
 
 ## References
 
-- [https://www.baeldung.com/cs/osi-packets-vs-frames](https://www.baeldung.com/cs/osi-packets-vs-frames)
+- [Network packet](https://en.wikipedia.org/wiki/Network_packet)
+- [What is a packet? Network packet definition](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/)
+- [Network Packet](https://networkencyclopedia.com/network-packet/)
+- [Frame (networking)](https://en.wikipedia.org/wiki/Frame_(networking))
+- [Network Frame](https://networkencyclopedia.com/network-frame/)
+- [OSI Model: Packets vs. Frames](https://www.baeldung.com/cs/osi-packets-vs-frames)
+

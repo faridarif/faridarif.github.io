@@ -211,5 +211,5 @@ Router(config-if)# no shutdown
 
 
 ## Reference :
-- [https://www.netwrix.com/cisco_commands_cheat_sheet.html](https://www.netwrix.com/cisco_commands_cheat_sheet.html)
-- [https://www.cisco.com/c/en/us/td/docs/routers/access/800M/software/800MSCG/routconf.html](https://www.cisco.com/c/en/us/td/docs/routers/access/800M/software/800MSCG/routconf.html)
+- [Cisco Command Cheat Sheet](https://www.netwrix.com/cisco_commands_cheat_sheet.html)
+- [Chapter: Basic Router Configuration - Cisco Docs](https://www.cisco.com/c/en/us/td/docs/routers/access/800M/software/800MSCG/routconf.html)

@@ -195,19 +195,95 @@ CIDR, which stands for Classless Inter-Domain Routing, is a method for represent
 
 For example, an organization might need a subnet with only 30 hosts. Instead of allocating a whole Class C network with 254 usable addresses, CIDR allows for a /27 subnet. providing just the 30 addresses required. **No longer do we have class A, B, and C networks, where class A is always /8, class B is always /16, and class C is always /24**.
 
+## Wildcard Mask (Involved a little bit of Routing concepts)
+
+**A wildcard mask is a concept that defines which parts of an IP address should be matched (considered important, constant, or fixed) and which parts should be ignored (considered unimportant or treated as variables) when making comparisons for filtering or routing purposes**. A wildcard mask consists of **four octets (32-bit)**, similar to an IP address or subnet mask. However, unlike a subnet mask that uses "1s" to represent the network portion and "0s" to represent the host portion, a wildcard mask uses "0s" to indicate the bits that should be matched and "1s" to indicate the bits that should be ignored. **A wildcard mask can be thought of as an inverted subnet mask**. For example :
+```
+Subnet mask: 255.255.255.0 = 11111111.11111111.11111111.00000000
+Wildcard mask: 0.0.0.255 = 00000000.00000000.00000000.11111111
+```
+
+The term "*wildcard mask*" may be commonly associated with Cisco devices. Wildcards are primarily used for :
+
+- **Access Control Lists (ACLs)** : Access control lists are used to filter traffic based on various criteria, including source and destination IP addresses. Wildcards in ACLs are used to specify ranges of IP addresses that should be permitted or denied access to a particular resource, service, or network segment.
+- **Routing Configurations** : In routing tables, wildcards are used for summarizing routes. A summarized route covers multiple specific routes and is represented by a wildcard mask. This helps reduce the size of routing tables and makes routing more efficient.
+
+### Access Control Lists (ACLs): Practical Example
+
+Suppose we are managing a network, and we want to set up an access control list on our Cisco router to allow or deny access to a range of IP addresses. We want to allow access from any IP address within the range `192.168.11.2` to `192.168.11.255` that has an **even number** in the last octet of an IP address. So a wildcard mask of `0.0.0.254` applied to `192.168.11.2` :
+```
+Wildcard mask: 00000000.00000000.00000000.11111110
+IP address   : 11000000.10101000.00001010.00000010
+```
+
+In wildcard mask, 0s is constant, so `192.168.11` (without the host portion) is constant. In binary representation of the wildcard mask above, the last bit of the last octet is set to 0. That last bit represents "1" in decimal. So that last bit is considered constant. In binary representation of the IP address, the last bit of the last octet is also set to 0. So, that last bit of the last octet must be a constant of 0.
+
+In binary representation of the wildcard mask above, the other bits of the last octet are set to 1, which means they are treated as variables and can be either 1 or 0.
+
+So in this case, the last octet of the IP address is an even number :
+```
+11000000.10101000.00001010.00000010 = 192.168.11.2
+11000000.10101000.00001010.00001010 = 192.168.11.10
+11000000.10101000.00001010.00000110 = 192.168.11.6
+11000000.10101000.00001010.00000100 = 192.168.11.4
+11000000.10101000.00001010.00100010 = 192.168.11.34
+11000000.10101000.00001010.01100000 = 192.168.11.96
+11000000.10101000.00001010.10011000 = 192.168.11.152
+11000000.10101000.00001010.00111110 = 192.168.11.62
+```
+**The last bit of the last octet is always set to 0**.
+
+### Routing Configurations: Practical Example
+
+[Routing (Concepts, Protocols, & Configurations)](https://faridarif.github.io/posts/routing/)
+Imagine we have a network with multiple subnets, and we want to configure routing in a way that optimizes the routing table by **summarizing routes** using wildcard masks. This can reduce the size of the routing table and make routing more efficient. Suppose we have the following subnets :
+
+- Subnet 1 : `10.0.0.0/24`
+- Subnet 2 : `10.0.1.0/24`
+- Subnet 3 : `10.0.2.0/24`
+- Subnet 4 : `10.0.3.0/24`
+
+1) **Wildcard Mask** :
+
+- Wildcard mask : `0.0.3.255`
+- In binary : `00000000.00000000.00000011.11111111`
+- This mask covers the first two octets exactly `10.0` and allows flexibility in the third and fourth octets.
+
+2) **Summary Route** :
+
+The binary representation of each subnet :
+```
+Subnet 1: 00001010.00000000.00000000.00000000
+Subnet 2: 00001010.00000000.00000001.00000000
+Subnet 3: 00001010.00000000.00000010.00000000
+Subnet 4: 00001010.00000000.00000011.00000000
+```
+By summarizing these subnets with the wildcard mask, we create a summary route : `10.0.0.0/22`
+```
+Binary representation of the subnet mask of 10.0.0.0/22 :
+
+11111111.11111111.11111100.00000000
+```
+This summary route covers all four subnets (Subnet 1, Subnet 2, Subnet 3, and Subnet 4).
+
+3) **Routing Table** :
+
+- Instead of adding an individual route for each subnet, we add the summary route to the routing table: `10.0.0.0/22 via next-hop`.
+- By using the summary route with the wildcard mask, we have reduced four individual routes to one summarized route in the routing table.
+
+Keep in mind that wildcard masks are often used in routing protocols and routing tables of networking devices, particularly in Cisco routers, to optimize the routing infrastructure and improve scalability.
+
 ## References
 
 - [Udemy - The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
 - [IP Characteristics and IPv4 Address Format](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996258#content)
-- [Network vs Hots Portion - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/4482068#content)
-- [Class A and B Addresses - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/4482076#content)
-- [Class C, D, and E Addresses - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996268#content)
-- [Subnet Mask - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996284#content)
+- [IP address](https://en.wikipedia.org/wiki/IP_address)
 - [Subnet Mask Cheat Sheet](https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/)
-- [CIDR Part 1 & 2 - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996296#overview)
-- [CIDR Part 3 - The Complete Networking Fundamentals Course(Udemy)](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/5579672#overview)
-- [Binary? How does that works?](https://www.youtube.com/watch?v=Toa5-1i4wRE&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=35)
-- [Binary IP Conversions](https://www.youtube.com/watch?v=TjW7yCqsHr8&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=36)
-- [Hexadecimal to Decimal](https://www.youtube.com/watch?v=bqF0zoGTaY0&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=38)
+- [YouTube - Binary? How does that works?](https://www.youtube.com/watch?v=Toa5-1i4wRE&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=35)
+- [YouTube - Binary IP Conversions](https://www.youtube.com/watch?v=TjW7yCqsHr8&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=36)
+- [YouTube - Hexadecimal to Decimal](https://www.youtube.com/watch?v=bqF0zoGTaY0&list=PLhfrWIlLOoKMCYDh94esrjiB5nUSPqMh0&index=38)
 - [IPv6 address](https://en.wikipedia.org/wiki/IPv6_address)
 - [Wildcard mask](https://en.wikipedia.org/wiki/Wildcard_mask)
+- [ACL Concept and Wildcard Masks - Cisco Article](https://www.ciscopress.com/articles/article.asp?p=3089353&seqNum=5)
+- [YouTube - MicroNugget: What are IPv4 Wildcard Masks?](https://www.youtube.com/watch?time_continue=2&v=s8BNrf0xC9w&embeds_referring_euri=https%3A%2F%2Fwww.cbtnuggets.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.cbtnuggets.com&source_ve_path=Mjg2NjY&feature=emb_logo)
+- [YouTube - Wildcard Masks: What are they?](https://www.youtube.com/watch?v=_PuyU1PJDo0)

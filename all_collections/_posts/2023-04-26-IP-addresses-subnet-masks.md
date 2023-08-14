@@ -235,8 +235,7 @@ So in this case, the last octet of the IP address is an even number :
 
 ### Routing Configurations: Practical Example
 
-[Routing (Concepts, Protocols, & Configurations)](https://faridarif.github.io/posts/routing/)
-Imagine we have a network with multiple subnets, and we want to configure routing in a way that optimizes the routing table by **summarizing routes** using wildcard masks. This can reduce the size of the routing table and make routing more efficient. Suppose we have the following subnets :
+[Routing (Concepts, Protocols, & Configurations)](https://faridarif.github.io/posts/routing/). Imagine we have a network with multiple subnets, and we want to configure routing in a way that optimizes the routing table by **summarizing routes** using wildcard masks. This can reduce the size of the routing table and make routing more efficient. Suppose we have the following subnets :
 
 - Subnet 1 : `10.0.0.0/24`
 - Subnet 2 : `10.0.1.0/24`

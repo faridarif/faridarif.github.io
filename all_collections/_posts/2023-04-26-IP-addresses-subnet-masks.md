@@ -17,7 +17,10 @@ This is the most commonly used version of the IP address. An IPv4 address is a *
 192.168.1.1
 ```
 
-Each decimal number is called an **octet** because it represents **8 bits** of the 32-bit IPv4 address. In binary, each octet can have a value between 0 (00000000 in binary) and 255 (11111111 in binary).
+Each decimal number is called an **octet** because it represents **8 bits** of the 32-bit IPv4 address. In binary, each octet can have a value between 0 (00000000 in binary) and 255 (11111111 in binary). Each octet :
+
+
+![Binary](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/binary.png){:.align-center}
 
 To convert an IPv4 address to binary, we convert each octet to its 8-bit binary representation and concatenate them. For example, let's convert `192.168.1.1` to binary :
 ```

@@ -230,6 +230,7 @@ EtherChannel, also known as link aggregation or port channeling, is a networking
 - **Consistent configuration. The individual EtherChannel group member port configuration must be consistent on both devices (for example, Switch 1 and Switch 2)**. If the physical ports of one side are configured as trunks (on Switch 1), the physical ports of the other side must also be configured as trunks (on Switch 2) within the same native VLAN.
 - **All ports in each EtherChannel link must be configured as Layer 2 ports (switchports)**.
 - **Each EtherChannel has a logical port channel interface**. A configuration applied to the port channel interface affects all physical interfaces that are assigned to that interface.
+
 There are two main configuration modes: *Static* (or unconditional EtherChannel) and *Dynamic*. In *static* mode, administrators manually select the links to be part of the EtherChannel group and configure them as such. Static mode configuration :
 
 1) Enter the interface configuration mode :

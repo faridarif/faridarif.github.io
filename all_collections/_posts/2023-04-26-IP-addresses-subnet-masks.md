@@ -197,6 +197,8 @@ For example, an organization might need a subnet with only 30 hosts. Instead of 
 
 ## Wildcard Mask (Involved a little bit of Routing concepts)
 
+Wildcard masks and wildcard addresses are different concepts in networking.
+
 **A wildcard mask is a concept that defines which parts of an IP address should be matched (considered important, constant, or fixed) and which parts should be ignored (considered unimportant or treated as variables) when making comparisons for filtering or routing purposes**. A wildcard mask consists of **four octets (32-bit)**, similar to an IP address or subnet mask. However, unlike a subnet mask that uses "1s" to represent the network portion and "0s" to represent the host portion, a wildcard mask uses "0s" to indicate the bits that should be matched and "1s" to indicate the bits that should be ignored. **A wildcard mask can be thought of as an inverted subnet mask**. For example :
 ```
 Subnet mask: 255.255.255.0 = 11111111.11111111.11111111.00000000

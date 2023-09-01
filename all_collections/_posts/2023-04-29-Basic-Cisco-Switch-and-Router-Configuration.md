@@ -162,7 +162,7 @@ Router(config-line)# login
 ```
 
 7) Set a password for VTY (Virtual Terminal) and enables password verification at the virtual terminal login session :
-- *The virtual terminal, or “VTY” lines are virtual lines that allow connecting to the device using telnet or Secure Shell (SSH). Cisco devices can have up to 16 VTY lines. You can determine how many VTY lines you have by issuing “line vty 0 ?” from global configuration mode. The value 0 4 in this command means "from virtual terminal 0 to virtual terminal 4" because in this situation we assume that this router can have only 5 users login to a virtual terminal (telnet or SSH) at the same time. The device can allow 5 simultaneous virtual connections. By default five vty lines (0–4) are open.*
+- *The virtual terminal, or “VTY” lines are virtual lines that allow connecting to the device using telnet or Secure Shell (SSH). Cisco devices can have up to 16 VTY lines. You can determine how many VTY lines you have by issuing “line vty 0 ?” from global configuration mode. The value 0 4 in this command means "from virtual terminal 0 to virtual terminal 4" because in this situation we assume that this rou can have only 5 users login to a virtual terminal (telnet or SSH) at the same time. The device can allow 5 simultaneous virtual connections. By default five vty lines (0–4) are open.*
 ```bash
 Router(config)# line vty 0 4
 Router(config-line)# password <password>

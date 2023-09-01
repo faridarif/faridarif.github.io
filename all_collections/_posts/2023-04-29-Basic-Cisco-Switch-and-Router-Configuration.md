@@ -145,7 +145,7 @@ Router(config)# no ip domain-lookup
 
 4) Specifies the name for the router :
 ```bash
-Router(config)# hostname <switch's name>
+Router(config)# hostname <router's name>
 ```
 
 5) Set a password that is required for any user to enter global configuration mode :

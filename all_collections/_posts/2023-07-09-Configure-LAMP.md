@@ -1,9 +1,10 @@
+---
 layout: post
 title: Configure LAMP (Linux, Apache, MySQL/MariaDB & PHP) on RedHat Linux
 date: 2023-07-09
 categories:
   - Web Development
-
+---
 
 **Note : The scope of this LAMP configuration guide is the RedHat Linux operating system. The command or path of the file might vary depending on the Linux distribution (Linux distro) that you are using. Other Linux distro such as Ubuntu, might have different paths for the *php.ini* file. This configuration guide will assume that you are familiar with basic Linux commands and have a basic understanding of dynamic websites.**
 

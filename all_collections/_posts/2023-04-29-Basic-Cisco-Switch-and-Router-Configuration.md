@@ -91,7 +91,7 @@ Switch# sh ip int brief
 - *An IP address is assigned to the VLAN interface. An IP address can't be assigned to an interface port. By default, all interface ports is in VLAN 1 (Native VLAN by default).*
 - *There are differences between a switch port and routed port. A routed port is a physical port that can route IP traffic (Layer 3/Network Layer) to another device.*
 - *This command shows an example of creating a VLAN interaface using the "int vlan" command and assigning an IP address to the interface VLAN 1.*
-- *The "no shutdown" command will bring the interface "up", while the "shutdown" command will shut down the interface, and the status of the interface will be "administratively down".*
+- *The `no shutdown` command will bring the interface "up", while the `shutdown` command will shut down the interface, and the status of the interface will be "administratively down".*
 ```bash
 Switch(config)# int vlan 1
 Switch(config-if)# ip address <ip-address> <subnet-mask>
@@ -202,13 +202,20 @@ Router# sh ip int brief
 
 12) Enter the interface configuration mode for the specific interface port and assign an IP address to that interface port :
 - *This command shows an example of assigning an IP address to the interface FastEthernet 0/1.*
-- *The "no shutdown" command will bring the interface "up", while the "shutdown" command will shut down the interface, and the status of the interface will be "administratively down".*
+- *The `no shutdown` command will bring the interface "up", while the `shutdown` command will shut down the interface, and the status of the interface will be "administratively down".*
 ```bash
 Router(config)# int FastEthernet 0/1
 Router(config-if)# ip address <ip-address> <subnet-mask>
 Router(config-if)# no shutdown
 ```
 
+13) Adding a description to an interface configuration :
+- *This command shows an example of assigning an IP address to the interface GigabitEthernet 0/1.*
+- *The `description` command is meant to provide a reminder in the configuration to describe what certain interfaces are used for.*
+```bash
+Router-1(config)# int GigabitEthernet 0/1
+Router-1(config-if)# description Link Directly Connected to Router-2
+```
 
 ## Reference :
 - [Cisco Command Cheat Sheet](https://www.netwrix.com/cisco_commands_cheat_sheet.html)

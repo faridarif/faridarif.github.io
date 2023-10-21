@@ -26,7 +26,7 @@ The `validation()` function appears to be vulnerable to [Buffer Overflow](https:
 
 ![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/adminshell-ghidra-validation.png){:.align-center}
 
-The `checksec` tool tells us that there is no PIE in the executable file. It means that it is possible for us to do a buffer overflow attack on this executable file.
+The `checksec` tool tells us that there is no PIE (Position-Independent Executable) in the executable file. It means that it is possible for us to do a buffer overflow attack on this executable file.
 
 ![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/adminshell-checksec.png){:.align-center}
 

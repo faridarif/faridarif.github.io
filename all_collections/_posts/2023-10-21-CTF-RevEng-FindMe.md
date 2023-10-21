@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reverse Engineering\: Find Me (Cyber Security Challenge - iTREXC)
+title: Reverse Engineering : Find Me (Cyber Security Challenge - iTREXC)
 date: 2023-10-21
 categories: ["CTF", "Reverse Engineering"]
 ---

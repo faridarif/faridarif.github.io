@@ -68,7 +68,7 @@ Switch(config)# banner motd #
 10) Save the configuration :
 - *This command saves the running configuration to the startup file on non-volatile random access memory (NVRAM).*
 ```bash
-Switch(config)# copy running-config startup-config
+Switch# copy running-config startup-config
 ```
 OR
 ```bash
@@ -183,7 +183,7 @@ Router(config)# banner motd #
 10) Save the configuration :
 - *This command saves the running configuration to the startup file on non-volatile random access memory (NVRAM).*
 ```bash
-Router(config)# copy running-config startup-config
+Router# copy running-config startup-config
 ```
 OR
 ```bash

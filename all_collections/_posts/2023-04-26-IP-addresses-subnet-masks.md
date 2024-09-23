@@ -8,7 +8,7 @@ categories: ["Networking"]
 
 ## IP Addresses
 
-An IP address, short for Internet Protocol address, is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. IP addresses are essential for **identifying and locating** devices in a network. They come in two versions which are IPv4 and IPv6.
+An IP address, short for Internet Protocol address, is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. Internet Protocol (IP) is a core communication protocol used in the internet and most local networks. It is responsible for delivering data packets between devices (such as computers, routers, and servers) across networks. IP defines the structure of the data [packets](https://faridarif.github.io/posts/packets-vs-frames/) and specifies the addressing method that allows devices to find each other on the network. Data transmitted via IP is broken down into small units called packets. Each packet contains both header information (source and destination addresses) and the actual data payload. IP addresses are essential for **identifying and locating** devices in a network. They come in two versions which are IPv4 and IPv6.
 
 ### IPv4 (Internet Protocol version 4)
 
@@ -130,7 +130,7 @@ So, the subnet address for the IP address `192.168.1.50` with a /27 subnet mask 
 
 ### Network Portion
 
-The network portion is the part of the address that identifies the specific network to which the device belongs. It helps routers and switches determine how to route [packets](https://faridarif.github.io/posts/packets-vs-frames/) between different networks. All devices within the **same network** share the **same network portion of their IP addresses**. The length of the network portion is determined by the subnet mask applied to the IP address. The 1s represent the network portion, and the 0s represent the host portion. For example, let's consider an IP address `192.168.1.1` with a subnet mask of `255.255.255.0` ( /24 ). The subnet mask in binary is :
+The network portion is the part of the address that identifies the specific network to which the device belongs. It helps routers and switches determine how to route packets between different networks. All devices within the **same network** share the **same network portion of their IP addresses**. The length of the network portion is determined by the subnet mask applied to the IP address. The 1s represent the network portion, and the 0s represent the host portion. For example, let's consider an IP address `192.168.1.1` with a subnet mask of `255.255.255.0` ( /24 ). The subnet mask in binary is :
 ```
 IP Address           : 192.168.1.1
 IP Address in Binary : 11000000.10101000.00000001.00000001 = 192.168.1.1

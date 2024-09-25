@@ -27,29 +27,29 @@ When a device (for example, computer) connected to a switch wants to send data t
     - The payload (data).
     - Trailer (for Frame Check Sequence (FCS)).
 
-### 2. Frame Reception by the Switch
+#### 2. Frame Reception by the Switch
 
 The source device then sends the frame to the switch over the access port to be forwarded.
 - Since it’s an access port, the frame is untagged, and no VLAN information is present in the frame at this point.
 
-### 3. De-Encapsulation and Learning by the Switch
+#### 3. De-Encapsulation and Learning by the Switch
 
 When the switch receives a frame, it examines the source MAC address of the frame. The switch checks its MAC address table to see if the source MAC address is already recorded. If the source MAC address is not in the table, the switch **updates** it **MAC address table** with the **source MAC address** and the **incoming port** on which the frame was received. **This is how a switch learns about MAC addresses (MAC address table learning)**. This process helps the switch maintain a record of which devices are connected to which ports. The MAC address table is dynamic and can change over time as devices connect or disconnect. If the same MAC address is seen on a different port, the table is updated to reflect the new port location. Before forwarding the frame, the switch performs a **lookup** in its **MAC address table** to determine the appropriate outgoing port for the **destination MAC address**. 
 
-### 4. Frame Forwarding
+#### 4. Frame Forwarding
 
 - If the destination MAC address is already in the table, the switch knows the device's corresponding port and forwards the frame only to that port.
 - If the destination MAC address is **not found in the MAC address table**, the switch forwards the frame to **all ports except the incoming port (flooding)**. This is known as "*unknown unicast flooding*". After flooding the frame to all ports (except the incoming port), the switch relies on the receiving devices on those ports to process the frame :
 
     1) **Correct Destination Device** :
 
-      - The correct destination device will recognize its own MAC address in the frame's destination MAC address field.
-      - It will accept the frame and extract the encapsulated data from the frame.
-      - The destination device processes the received data, which could involve displaying it on a screen, storing it in memory, or taking other appropriate actions.
+    - The correct destination device will recognize its own MAC address in the frame's destination MAC address field.
+    - It will accept the frame and extract the encapsulated data from the frame.
+    - The destination device processes the received data, which could involve displaying it on a screen, storing it in memory, or taking other appropriate actions.
 
     2) **Incorrect Destination Device** :
 
-      - The incorrect destination devices will ignore or drop the frame since the destination MAC address doesn't match their own MAC address.
+    - The incorrect destination devices will ignore or drop the frame since the destination MAC address doesn't match their own MAC address.
 
 The switch also follows different procedures based on the frame type :
 

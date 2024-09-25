@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Binary Exploitation : AdminShell (CyberSecurity Challenge - iTREXC 2023)"
+title: "AdminShell (CyberSecurity Challenge - iTREXC 2023)"
 date: 2023-10-21
 categories: ["Cybersecurity", "Binary Exploitation"]
 ---

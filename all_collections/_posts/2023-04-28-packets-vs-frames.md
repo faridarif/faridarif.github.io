@@ -4,6 +4,8 @@ title: Packets vs Frames
 date: 2023-04-28
 categories: ["Networking"]
 ---
+![TechDifferences - Difference Between Frame and Packet](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/packet-and-frame.jpg){:.align-center}
+
 ## Packets
 
 Packet is a unit of data that is transmitted over a network. It is a logical grouping of information that includes both the data being transmitted and the necessary control information. Packets are typically used at the **Network Layer (Layer 3)** of the OSI model. A packet consists of two main components which is Header and Payload.

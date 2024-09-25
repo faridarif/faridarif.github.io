@@ -38,6 +38,7 @@ Frames are essential for data transmission **within a network**. When a device w
 
 ## References
 
+- [TechDifferences - Difference Between Frame and Packet](https://techdifferences.com/difference-between-frame-and-packet.html)
 - [Packet switching](https://en.wikipedia.org/wiki/Packet_switching)
 - [Header (computing)](https://en.wikipedia.org/wiki/Header_(computing))
 - [Payload (computing)](https://en.wikipedia.org/wiki/Payload_(computing))

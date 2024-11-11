@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Network Devices (Repeater, Hub, Switch, and Router)
-date: 2023-04-25
+date: 2023-04-24
 categories: ["Networking"]
 ---
 

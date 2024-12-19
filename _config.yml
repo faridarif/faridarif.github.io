@@ -5,7 +5,7 @@ markdown: kramdown
 author:
   name: Farid Arif
   email: faridarifmy@gmail.com
-
+google_analytics: G-LMEM8VW4KP
 plugins:
   - jemoji
   - jekyll-seo-tag

@@ -95,3 +95,4 @@ We can see that there’s an **`iTXt`** chunk near the end. The `iTXt` is used t
 
 ## Reference
 - [PNG Structure for Beginner](https://medium.com/@0xwan/png-structure-for-beginner-8363ce2a9f73)
+- [CTFtime - Chunkies (writeup)](https://ctftime.org/writeup/26913)

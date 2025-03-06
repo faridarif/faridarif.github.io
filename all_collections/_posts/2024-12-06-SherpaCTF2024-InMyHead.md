@@ -10,10 +10,7 @@ Even though the difficulty of this challenge was considered easy, I initially fo
 
 The challenge presented us with a PCAP file and the following description:
 
-```
-https://youtube.com/clip/UgkxrLa5UkwGkGiDT3IZoZUS6jDORSAjrCiQ?si=JKvLpTN-mHsA4snO
-FR But seriously, something is in my head, can you find it?
-```
+> *"https://youtube.com/clip/UgkxrLa5UkwGkGiDT3IZoZUS6jDORSAjrCiQ?si=JKvLpTN-mHsA4snO FR But seriously, something is in my head, can you find it?"*
 
 The challenge focused on two key aspects: analyzing **TCP SYN packets** and conducting an **IPv4 header analysis**. However, I initially took the wrong approach by concentrating on the TCP header and its options field instead of the IPv4 header.
 

@@ -91,3 +91,7 @@ Once we replace `BBBB` with `IDAT`, try to re-running `pngcheck`. If the rest of
 
 We can see that there’s an **`iTXt`** chunk near the end. The `iTXt` is used to store textual data in a PNG, which is the flag (open the image to get the flag).
 
+---
+
+## Reference
+- [PNG Structure for Beginner](https://medium.com/@0xwan/png-structure-for-beginner-8363ce2a9f73)

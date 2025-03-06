@@ -107,6 +107,8 @@ tshark -r IN_MY_HEADDD.pcapng -Y "tcp.options.timestamp" -T fields -e tcp.option
 
 This was the data I spent 12 hours trying to decode, believing it held the solution to the challenge.
 
+---
+
 #### **The Thing in My Head**
 
 In the TCP header, there is an **Options** field that can hold up to 40 bytes, which could theoretically be used to hide data. At the time, I theorized that a Command-and-Control (C2) payload might be embedded within the TCP header and sent by `10.10.1.11`, which I suspected to be an attacker controlling the botnet. While I cannot confirm whether embedding a C2 payload in the TCP Options field is practical or commonly done, this misstep cost me significant time. <u>Is it possible to embed C2 payload in the TCP header, specifically in the TCP Option field?</u>

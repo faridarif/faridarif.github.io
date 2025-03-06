@@ -31,7 +31,7 @@ A valid PNG always starts with **8 specific bytes**:
 ```python
 89 50 4E 47 0D 0A 1A 0A
 ```
-Any deviation means the file likely isn’t a valid PNG. This helps programs identify the file as a PNG. A **chunk** in a PNG file is a self-contained block of data with the following structure:
+This is called PNG signature. Any deviation means the file likely isn’t a valid PNG. This helps programs identify the file as a PNG. A **chunk** in a PNG file is a self-contained block of data with the following structure:
 
 1. **Length (4 bytes):**
     - Specifies the size of the chunk data.

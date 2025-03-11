@@ -6,6 +6,8 @@ categories: ["Networking"]
 ---
 **Note: IP addresses and subnet masks are mathematical and technical topics. In order to build a better understanding of IP addresses and subnet masks, we must first understand the basic operation of computers and the concepts of binary and hexadecimal. We must understand the term '*bit*' in computer operation. In binary representation, each bit can be either 0 or 1, which is essential when dealing with IP addresses and subnet masks because each part of the IP address can only be one of these two values. Understanding binary and hexadecimal allows us to grasp how IP addresses are represented in these formats, making it easier to work with them, especially when subnetting or dealing with IPv6 addresses that are expressed in hexadecimal. Do your own studies and refer to all the references included in the References section for more information.**
 
+---
+
 ## IP Addresses
 
 An IP address, short for Internet Protocol address, is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. Internet Protocol (IP) is a core communication protocol used in the internet and most local networks. It is responsible for delivering data packets between devices (such as computers, routers, and servers) across networks. IP defines the structure of the data [packets](https://faridarif.github.io/posts/packets-vs-frames/) and specifies the addressing method that allows devices to find each other on the network. Data transmitted via IP is broken down into small units called packets. Each packet contains both header information (source and destination addresses) and the actual data payload. IP addresses are essential for **identifying and locating** devices in a network. They come in two versions which are IPv4 and IPv6.
@@ -104,6 +106,8 @@ In IPv6, the subnetting process is much simpler compared to IPv4 because IPv6 al
 
 IPv6 has built-in mechanisms for stateless address autoconfiguration (SLAAC), where hosts on a network can **automatically generate** their IPv6 addresses **without needing a DHCP server**. This is accomplished using the network's prefix and a unique identifier (for example, MAC address) to form the host portion of the IPv6 address. IPv6 provides an incredibly vast number of unique addresses, ensuring the scalability of the internet for the foreseeable future.
 
+---
+
 ## Subnet Masks
 
 A subnet, short for Subnetwork, is a division of a larger network into smaller, more manageable segments. **The subnet address is a unique identifier for a specific subnetwork within a larger network**. Subnetting allows network administrators to improve network performance, security, and efficiency by grouping devices with similar network requirements together.
@@ -183,6 +187,8 @@ Broadcast address: 11111111.11111111.11111111.11111111
 ```
 
 **The host address is the specific address assigned to a device within a network that is within the range defined by the host portion of the IP address**. **The terms "*host portion*" and "*host address*" are also used interchangeably when discussing IP addressing**. Using the example of IP address `192.168.1.1`, the range of host addresses within this network is **from `192.168.1.1` to `192.168.1.254`**. One specific device can have an IP address of `192.168.1.3`, and another specific device can have an IP address of `192.168.1.251` within this network.
+
+---
 
 ## CIDR Notation
 
@@ -273,6 +279,8 @@ This summary route covers all four subnets (Subnet 1, Subnet 2, Subnet 3, and Su
 - By using the summary route with the wildcard mask, we have reduced four individual routes to one summarized route in the routing table.
 
 Keep in mind that wildcard masks are often used in routing protocols and routing tables of networking devices, particularly in Cisco routers, to optimize the routing infrastructure and improve scalability.
+
+---
 
 ## References
 

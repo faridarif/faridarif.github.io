@@ -6,7 +6,8 @@ categories: ["Networking"]
 ---
 ![TechDifferences - Difference Between Frame and Packet](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/packet-and-frame.jpg){:.align-center}
 
-## Packets
+---
+## **Packets**
 
 Packet is a unit of data that is transmitted over a network. It is a logical grouping of information that includes both the data being transmitted and the necessary control information. Packets are typically used at the **Network Layer (Layer 3)** of the OSI model. A packet consists of two main components which is Header and Payload.
 
@@ -23,7 +24,8 @@ Packets are the fundamental units of data transmission **across networks**. When
 
 At the receiving end, the receiving device examines the header information to determine the appropriate routing and delivery of the packet. It extracts the payload, which contains the actual data, and processes it accordingly.
 
-## Frames
+---
+## **Frames**
 
 Frame is also a unit of data that is transmitted over a network. It is a **structured packet** that contains the necessary information for communication between devices. Frames are typically used at the **Data Link Layer (Layer 2)** of the OSI model. **The structure of a frame varies depending on the specific data link protocol being used**.
 
@@ -38,7 +40,8 @@ Frame is also a unit of data that is transmitted over a network. It is a **struc
 
 Frames are essential for data transmission **within a network**. When a device wants to send data to another device on the **same network**, it encapsulates the data into a frame, adding the necessary header and trailer information. The frame is then transmitted over the network medium, such as an Ethernet cable or a wireless signal.
 
-## References
+---
+## **References**
 
 - [TechDifferences - Difference Between Frame and Packet](https://techdifferences.com/difference-between-frame-and-packet.html)
 - [Packet switching](https://en.wikipedia.org/wiki/Packet_switching)

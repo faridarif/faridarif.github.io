@@ -15,9 +15,10 @@ Switching is the process of **forwarding data** [frames](https://faridarif.githu
 - **Stack Ports** : Stack ports are used in switches that support stacking, a technology that allow **multiple physical switches** to operate as a **single logical switch**. Stack ports are used to create a high-speed backplane connection between the stacked switches, allowing them to function as one unit and share resources.
 - **Console Port** : The console port is a serial port used for **direct local management** and configuration of the switch. It provides a direct connection to the switch's operating system **through a terminal emulator**.
 
-## How Does Data Flow in Switches?
+---
+## **How Does Data Flow in Switches?**
 
-#### 1. Encapsulation at the Device Level (Source Device)
+#### **1. Encapsulation at the Device Level (Source Device)**
 
 When a device (for example, computer) connected to a switch wants to send data to another device on the same network, it **encapsulates data** into a **Layer 2 frame**.
 - The data starts at the Application Layer and is passed down the OSI model (from Layer 7 to Layer 2).
@@ -27,16 +28,16 @@ When a device (for example, computer) connected to a switch wants to send data t
     - The payload (data).
     - Trailer (for Frame Check Sequence (FCS)).
 
-#### 2. Frame Reception by the Switch
+#### **2. Frame Reception by the Switch**
 
 The source device then sends the frame to the switch over the access port to be forwarded.
 - Since it’s an access port, the frame is untagged, and no VLAN information is present in the frame at this point.
 
-#### 3. De-Encapsulation and Learning by the Switch
+#### **3. De-Encapsulation and Learning by the Switch**
 
 When the switch receives a frame, it examines the source MAC address of the frame. The switch checks its MAC address table to see if the source MAC address is already recorded. If the source MAC address is not in the table, the switch **updates** it **MAC address table** with the **source MAC address** and the **incoming port** on which the frame was received. **This is how a switch learns about MAC addresses (MAC address table learning)**. This process helps the switch maintain a record of which devices are connected to which ports. The MAC address table is dynamic and can change over time as devices connect or disconnect. If the same MAC address is seen on a different port, the table is updated to reflect the new port location. Before forwarding the frame, the switch performs a **lookup** in its **MAC address table** to determine the appropriate outgoing port for the **destination MAC address**. 
 
-#### 4. Frame Forwarding
+#### **4. Frame Forwarding**
 
 - If the destination MAC address is already in the table, the switch knows the device's corresponding port and forwards the frame only to that port.
 - If the destination MAC address is **not found in the MAC address table**, the switch forwards the frame to **all ports except the incoming port (flooding)**. This is known as "*unknown unicast flooding*". After flooding the frame to all ports (except the incoming port), the switch relies on the receiving devices on those ports to process the frame :
@@ -57,7 +58,8 @@ The switch also follows different procedures based on the frame type :
 - **Broadcast** : If the frame is a broadcast frame (sent to all devices on the network or **one-to-all** communication), the switch broadcasts the frame out of all its ports. This ensures that all devices connected to the switch receive the broadcast data.
 - **Multicast** : If the frame is a multicast frame (sent to a specific group of devices or **one-to-many** communication), the switch uses special multicast MAC addresses to forward the frame only to members of that multicast group.
 
-## Virtual LANs (VLANs)
+---
+## **Virtual LANs (VLANs)**
 
 VLANs (Virtual Local Area Networks) are a technology used to logically segment a **single physical switch** into **multiple virtual switches**, without requiring separate physical infrastructure. A VLAN is a logical partition of a Layer 2 (data link layer) network. This allows us to isolate traffic, improve security, and manage the network more efficiently. VLANs allow network administrators to **divide a large, flat network into smaller**, **isolated segments**. Devices within the same VLAN can communicate with each other as if they were connected to the same physical switch, even if they are physically connected to different switches. Devices in one VLAN cannot directly communicate with devices in other VLANs, providing a level of isolation that helps prevent unauthorized access. For example, a device within VLAN 10 cannot directly communicate with devices within VLAN 20. By dividing a network into multiple VLANs, broadcast domains are also segmented. Broadcast traffic is limited to devices within the same VLAN, reducing unnecessary broadcast traffic on the entire network. To identify which VLAN a frame belongs to, VLAN tagging is used. When a frame leaves a device in a VLAN, it is "*tagged*" with a VLAN identifier (VLAN ID). This tagging happens internally within the switch, and the frame is sent with the appropriate VLAN tag through the switch. In VLANs, tagging is the process of adding a special tag or identifier to [Ethernet](https://faridarif.github.io/posts/Ethernet/) frames to indicate which VLAN the frame belongs to. This process allows devices to communicate based on VLAN membership, regardless of their physical location.
 - **Default VLAN** : Most switches come with a default VLAN (usually VLAN 1) that includes all ports when they are not explicitly assigned to other VLANs. It's a best practice to avoid using VLAN 1 for user traffic due to security reasons and potential vulnerabilities associated with the default VLAN.
@@ -66,7 +68,7 @@ VLANs (Virtual Local Area Networks) are a technology used to logically segment a
 - **Management VLAN** : The management VLAN is used for network management purposes, such as accessing and configuring switches remotely. Devices used for network management, such as SNMP (Simple Network Management Protocol) servers, are typically placed in the management VLAN.
 - **Native VLAN** : On a trunk link, one VLAN is designated as the "*native VLAN*". Frames belonging to the native VLAN are sent without a VLAN tag over the trunk.
 
-### Basic VLAN Configurations
+### **Basic VLAN Configurations**
 
 1) Creating a VLAN :
 
@@ -134,7 +136,8 @@ OR
 Switch(config)# show vlan brief
 ```
 
-## Trunk
+---
+## **Trunk**
 
 In networking, a "*trunk*" refers to a high-speed connection between network devices, typically switches, that carry traffic for multiple VLANs simultaneously. A VLAN Trunk is a point-to-point link that carries more than one VLAN traffic. Trunks allow for the transportation of data between switches while maintaining the separation and identification of individual VLANs. Trunks are essential for extending VLANs across multiple switches and enabling efficient communication in large networks. Trunks use a technique called "*VLAN tagging*" to differentiate frames belonging to different VLANs as they traverse the trunk link. The most common standard for VLAN tagging on trunks is 802.1Q, defined by the IEEE (Institute of Electrical and Electronics Engineers).
 
@@ -161,7 +164,7 @@ Switch(config-if)# switchport trunk allowed vlan <vlan-id-list>
 Switch# show interface <interface-id> switchport
 ```
 
-### DTP (Dynamic Trunking Protocol) & Configurations
+### **DTP (Dynamic Trunking Protocol) & Configurations**
 
 DTP is a **Cisco proprietary protocol** that runs on Cisco switches and is used to **negotiate** and **automatically** form trunk links between switches. DTP might **not be suitable for multivendor environments**. The primary purpose of DTP is to automate the process of trunk negotiation, making it easier for network administrators to configure trunk links without explicitly specifying whether a link should be a trunk or an access port. DTP is **enabled by default** on **most Cisco switches**. When we connect two switches or a switch to another device (such as a router), the ports will attempt to negotiate whether they should form a trunk link using DTP. DTP packets are exchanged between switches to determine if they can form a trunk link. If both switches agree, they form a trunk link and begin tagging VLANs across that link. DTP supports two modes (one mode per port), and there are conditions for a link to become a trunk link :
 - **Dynamic Auto** : In this mode, the switch will respond to DTP negotiation requests, but it won't actively initiate the negotiation. The port will only become a trunk port if the other end (switch port) initiates the negotiation and is configured as "*Dynamic Desirable*". Otherwise, it will become an access port. This is the default mode of DTP.
@@ -194,7 +197,7 @@ Switch# show interface <interface-id> switchport
 
 **It's important to be aware of DTP's default behavior to avoid unintended trunk formation between switches**. To explicitly control whether a port should be a trunk or an access port, we can manually configure the port as a trunk (using "*switchport mode trunk*") or as an access port (using "*switchport mode access*"). This will override DTP's default behavior for that specific port.
 
-### VTP (VLAN Trunking Protocol) & Configurations
+### **VTP (VLAN Trunking Protocol) & Configurations**
 
 VTP is another **Cisco proprietary protocol** that is used to manage and **synchronize VLAN information** across multiple switches **within** a **VLAN management domain**. VTP might **not be suitable for multivendor environments**. The primary purpose of VTP is to simplify the administration of VLANs in large networks. Instead of manually configuring VLANs on each switch, VTP allows the network administrators to **create**, **modify**, and **delete** VLANs on **one VTP server switch**, and **these changes** are **automatically propagated** to other switches in the **same VTP domain**. VTP messages are exchanged between switches to share VLAN information. VTP supports three modes for switches in a VTP domain (one mode per switch) :
 - **Server** : A VTP server is responsible for managing VLAN information. VLAN changes made on a VTP server are propagated to other switches in the VTP domain.
@@ -230,19 +233,22 @@ Switch# show vtp password
 ```
 
 **It's important to be aware that VTP has some potential drawbacks and risks, including VLAN overwrite and misconfiguration**. VLAN information may accidentally overwritten or misconfigured when a new switch with a higher VTP revision number is introduced to the network. The revision number is used to keep track of changes to the VLAN configuration and to ensure that switches in the same VTP domain have the most up-to-date VLAN information. Whenever a change is made to the VLAN configuration on a VTP server switch, including deleting all or a specific VLAN, the revision number is incremented by one. **Some network administrators prefer not to use VTP and instead opt for more manual and controlled VLAN management approaches**.
-## Management VLAN
+
+---
+## **Management VLAN**
 
 The main goal of a Management VLAN is to separate management traffic from regular user data traffic. Separating management traffic from regular user traffic ensures that network administrators can securely access and manage network devices without interference from general user data. It is dedicated solely to handling traffic such as Telnet, SSH, SNMP (Simple Network Management Protocol), Syslog, and other protocols used for monitoring, configuring, and troubleshooting network devices.
 
-### In-Band Management
+### **In-Band Management**
 
 In-band management refers to managing network devices over the same data network used for regular user traffic. In this approach, management traffic **shares the same network infrastructure** (routers, switches, and links) **as user data traffic**. Administrators access the management interface of devices using the same network path and IP addressing used for general user data.
 
-### Out-of-Band Management
+### **Out-of-Band Management**
 
 Out-of-band management involves managing network through a **separate dedicated network path** that is **independent** of the **primary data network**. It provides a secure dedicated alternate access method into an IT network infrastructure to administer connected devices and IT assets without using the corporate LAN (in corporate environment). Network administrators access devices' management interface using separate network connections and IP addressing specifically designated for out-of-band management.
 
-## EtherChannel (Link Aggregation)
+---
+## **EtherChannel (Link Aggregation)**
 
 EtherChannel, also known as link aggregation or port channeling, is a networking technology that allows multiple physical Ethernet links to be combined into a single logical link, providing increased bandwidth, redundancy, and load balancing. It provides redundancy by allowing traffic to continue flowing even if one or more individual links in the EtherChannel fail. EtherChannel is configured on participating switches or devices by grouping individual physical links into a logical bundle called an EtherChannel group. EtherChannel has certain implementation restrictions, including the following :
 - **Interface types cannot be mixed**. For example, FastEthernet and GigabitEthernet cannot be mixed within a single EtherChannel.
@@ -283,7 +289,7 @@ Switch(config-if)# switchport trunk allowed vlan 1,2,10,20
 
 In *dynamic* mode, protocols such as LACP (Link Aggregation Control Protocol) or PAgP (Port Aggregation Protocol) negotiate the formation and characteristics of the EtherChannel. These protocols allow ports with similar characteristics to form a channel through dynamic negotiation with adjoining switches.
 
-### PAgP (Port Aggregation Protocol)
+### **PAgP (Port Aggregation Protocol)**
 
 PAgP is a **Cisco proprietary** protocol that aids in the automatic creation of EtherChannel links. When an EtherChannel link is configured using PAgP, PAgP packets are sent between EtherChannel-capable ports to negotiate the formation of a channel. When PAgP identifies matched Ethernet links, it groups the links into an EtherChannel. The EtherChannel is then added to the spanning tree as a single port. PAgP packets are sent every 30 seconds. PAgP checks for configuration consistency and manages link additions and failures between two switches. It ensures that when an EtherChannel is created, all ports have the same type of configuration. The modes for PAgP as follows :
 - **Desirable** : This mode places an interface in an active negotiating state, in which the interface initiates negotiations with other interfaces by sending PAgP packets.
@@ -316,7 +322,7 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# switchport trunk allowed vlan 1,2,10,20
 ```
 
-### LACP (Link Aggregation Control Protocol)
+### **LACP (Link Aggregation Control Protocol)**
 
 LACP is part of an **IEEE specification (802.3ad)** that allows EtherChannel. LACP allows a switch to negotiate an automatic bundle by sending LACP packets to the other switch. Because LACP is an IEEE standard, it **can be used** to facilitate EtherChannels in **multivendor environments**. LACP provides the **same negotiation benefits** as **PAgP**. LACP helps create the EtherChannel link by detecting the configuration of each side and making sure that they are compatible so that the EtherChannel link can be enabled when needed. The modes for LACP :
 - **Active** : This mode places a port in an active negotiating state. In this state, the port initiates negotiations with other ports by sending LACP packets.
@@ -349,7 +355,7 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# switchport trunk allowed vlan 1,2,10,20
 ```
 
-### Verify EtherChannel
+### **Verify EtherChannel**
 
 As always, when we configure devices in a network, we must verify the configuration. If there are problems, we will also need to be able to troubleshoot and fix them.
 
@@ -373,7 +379,8 @@ Switch# show etherchannel port-channel
 Switch# show intereface etherchannel
 ```
 
-## References
+---
+## **References**
 
 - [VLANs (Complete Chapter) - Cisco Docs](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/5_x/nx-os/layer2/configuration/guide/Cisco_Nexus_7000_Series_NX-OS_Layer_2_Switching_Configuration_Guide_Release_5-x_chapter4.html)
 - [YouTube - VLANs](https://www.youtube.com/watch?v=j4u1IY71Wto)

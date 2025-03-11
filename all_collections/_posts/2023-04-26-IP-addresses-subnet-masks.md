@@ -7,11 +7,11 @@ categories: ["Networking"]
 **Note: IP addresses and subnet masks are mathematical and technical topics. In order to build a better understanding of IP addresses and subnet masks, we must first understand the basic operation of computers and the concepts of binary and hexadecimal. We must understand the term '*bit*' in computer operation. In binary representation, each bit can be either 0 or 1, which is essential when dealing with IP addresses and subnet masks because each part of the IP address can only be one of these two values. Understanding binary and hexadecimal allows us to grasp how IP addresses are represented in these formats, making it easier to work with them, especially when subnetting or dealing with IPv6 addresses that are expressed in hexadecimal. Do your own studies and refer to all the references included in the References section for more information.**
 
 ---
-## IP Addresses
+## **IP Addresses**
 
 An IP address, short for Internet Protocol address, is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. Internet Protocol (IP) is a core communication protocol used in the internet and most local networks. It is responsible for delivering data packets between devices (such as computers, routers, and servers) across networks. IP defines the structure of the data [packets](https://faridarif.github.io/posts/packets-vs-frames/) and specifies the addressing method that allows devices to find each other on the network. Data transmitted via IP is broken down into small units called packets. Each packet contains both header information (source and destination addresses) and the actual data payload. IP addresses are essential for **identifying and locating** devices in a network. They come in two versions which are IPv4 and IPv6.
 
-### IPv4 (Internet Protocol version 4)
+### **IPv4 (Internet Protocol version 4)**
 
 This is the most commonly used version of the IP address. An IPv4 address is a **32-bit** number represented as **four decimal numbers** (each ranging from 0 to 255), **separated by periods (dots)**. For example, an IPv4 address looks like this : 
 ```
@@ -106,7 +106,7 @@ In IPv6, the subnetting process is much simpler compared to IPv4 because IPv6 al
 IPv6 has built-in mechanisms for stateless address autoconfiguration (SLAAC), where hosts on a network can **automatically generate** their IPv6 addresses **without needing a DHCP server**. This is accomplished using the network's prefix and a unique identifier (for example, MAC address) to form the host portion of the IPv6 address. IPv6 provides an incredibly vast number of unique addresses, ensuring the scalability of the internet for the foreseeable future.
 
 ---
-## Subnet Masks
+## **Subnet Masks**
 
 A subnet, short for Subnetwork, is a division of a larger network into smaller, more manageable segments. **The subnet address is a unique identifier for a specific subnetwork within a larger network**. Subnetting allows network administrators to improve network performance, security, and efficiency by grouping devices with similar network requirements together.
 
@@ -116,7 +116,7 @@ A subnet mask is a 32-bit value (in IPv4) used to identify the network and host 
 ```
 In this subnet mask, the first 24 bits (from the left) are set to 1, which means the first 24 bits of the IP address are part of the network portion, and the last 8 bits are set to 0, representing the host portion.
 
-### Subnet Address Calculation
+### **Subnet Address Calculation**
 
 To calculate the subnet address for a given IP address and subnet mask, perform a bitwise AND operation between the IP address and the subnet mask (The result will be the subnet address). For example, consider the IP address `192.168.1.50` and the subnet mask `255.255.255.224` ( /27 ) :
 ```
@@ -130,7 +130,7 @@ So, the subnet address for the IP address `192.168.1.50` with a /27 subnet mask 
 
 ## Network vs Host Portion in IPv4 Addresses
 
-### Network Portion
+### **Network Portion**
 
 The network portion is the part of the address that identifies the specific network to which the device belongs. It helps routers and switches determine how to route packets between different networks. All devices within the **same network** share the **same network portion of their IP addresses**. The length of the network portion is determined by the subnet mask applied to the IP address. The 1s represent the network portion, and the 0s represent the host portion. For example, let's consider an IP address `192.168.1.1` with a subnet mask of `255.255.255.0` ( /24 ). The subnet mask in binary is :
 ```
@@ -152,7 +152,7 @@ Network Address      : 192.168.1.224
 ```
 So, the network portion or network address of this IP address is `192.168.1.224`. Is subnet address same as network address? The terms "**subnet address**" and "**network address**" are **not interchangeable**, as a network address refers to the overall address of a network, while a subnet address refers to a specific subnetwork within that larger network.
 
-### Host Portion
+### **Host Portion**
 
 The host portion is the part of the address that identifies a specific device within a network. Each device within a network must have a unique host portion to ensure proper communication. For example the subnet of `255.255.255.0` ( /24 ) in binary :
 ```
@@ -187,11 +187,11 @@ Broadcast address: 11111111.11111111.11111111.11111111
 **The host address is the specific address assigned to a device within a network that is within the range defined by the host portion of the IP address**. **The terms "*host portion*" and "*host address*" are also used interchangeably when discussing IP addressing**. Using the example of IP address `192.168.1.1`, the range of host addresses within this network is **from `192.168.1.1` to `192.168.1.254`**. One specific device can have an IP address of `192.168.1.3`, and another specific device can have an IP address of `192.168.1.251` within this network.
 
 ---
-## CIDR Notation
+## **CIDR Notation**
 
 CIDR, which stands for Classless Inter-Domain Routing, is a method for representing and allocating IP addresses in a more flexible and efficient manner compared to the older classful addressing system. CIDR replaces classful IP addressing.
 
-### Classful Addressing vs CIDR (Classless Addressing)
+### **Classful Addressing vs CIDR (Classless Addressing)**
 
 - **Classful Addressing** : In the early days of the internet, IP addresses were assigned based on classful addressing, which divided the IP address space into fixed classes (A, B, C, D, and E). Each class had a **predetermined** number of bits for the **network portion** and the **host portion**. This fixed allocation led to significant wastage of IP address space, especially in cases where organizations were assigned larger address blocks that they needed.
 - **CIDR (Classless Addressing)** : CIDR, on the other hand, does away with the strict class-based divisions and allows for **variable-length subnet masks** (VLSM). With CIDR, an IP address is represented with both IP address and the subnet mask together, using the notation "/*prefix_length*". VLSM uses the notation `192.168.1.0/24` rather than the notation `192.168.1.0  255.255.255.0`. For example, `192.168.1.0/24` indicates that the **first 24 bits are the network portion**, and the **remaining 8 bits are for hosts**.
@@ -213,7 +213,7 @@ The term "*wildcard mask*" may be commonly associated with Cisco devices. Wildca
 - **Access Control Lists (ACLs)** : Access control lists are used to filter traffic based on various criteria, including source and destination IP addresses. Wildcards in ACLs are used to specify ranges of IP addresses that should be permitted or denied access to a particular resource, service, or network segment.
 - **Routing Configurations** : In routing tables, wildcards are used for summarizing routes. A summarized route covers multiple specific routes and is represented by a wildcard mask. This helps reduce the size of routing tables and makes routing more efficient.
 
-### Access Control Lists (ACLs): Practical Example
+### **Access Control Lists (ACLs): Practical Example**
 
 Suppose we are managing a network, and we want to set up an access control list on our Cisco router to allow or deny access to a range of IP addresses. We want to allow access from any IP address within the range `192.168.11.2` to `192.168.11.255` that has an **even number** in the last octet of an IP address. So a wildcard mask of `0.0.0.254` applied to `192.168.11.2` :
 ```
@@ -238,7 +238,7 @@ So in this case, the last octet of the IP address is an even number :
 ```
 **The last bit of the last octet is always set to 0**.
 
-### Routing Configurations: Practical Example
+### **Routing Configurations: Practical Example**
 
 [Routing (Concepts, Protocols, & Configurations)](https://faridarif.github.io/posts/routing/). Imagine we have a network with multiple subnets, and we want to configure routing in a way that optimizes the routing table by **summarizing routes** using wildcard masks. This can reduce the size of the routing table and make routing more efficient. Suppose we have the following subnets :
 
@@ -278,7 +278,7 @@ This summary route covers all four subnets (Subnet 1, Subnet 2, Subnet 3, and Su
 Keep in mind that wildcard masks are often used in routing protocols and routing tables of networking devices, particularly in Cisco routers, to optimize the routing infrastructure and improve scalability.
 
 ---
-## References
+## **References**
 
 - [Udemy - The Complete Networking Fundamentals Course](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
 - [IP Characteristics and IPv4 Address Format](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/learn/lecture/7996258#content)

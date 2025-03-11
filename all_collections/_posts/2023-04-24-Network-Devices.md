@@ -8,8 +8,7 @@ categories: ["Networking"]
 **Note: There are several other networking devices and equipment commonly used in various network environments. However, Repeaters, Hubs, Switches, and Routers are the most basic and crucial networking devices used in various network environments. These devices form the building blocks of networking infrastructure, and their proper deployment and configuration are essential for efficient data transmission, secure communication, and reliable network connectivity. This blog post will not explain in detail how these devices work.**
 
 ---
-
-## Repeater
+## **Repeater**
 
 Repeater is a basic networking device used to extend the range of a network by amplifying or regenerating signals. The repeater would repeat the signal from one port to another. The repeater basically didn't understand the actual signal, but it just amplified the signal from one port to another. Its primary function is to receive weak signals, clean them up, and then retransmit them at a higher power level to cover longer distances. Repeater works at the **Physical Layer (Layer 1)** of the OSI model. Repeater only helps to extend network reach. It does not increase the overall network bandwidth. Repeater typically have two ports, which are an input port and an output port. **Repeaters** operate in **full-duplex** mode, because they receive and transmit at the same time. However, **the repeater user** is usually operating in **half-duplex** mode.
 
@@ -20,16 +19,14 @@ Repeater is a basic networking device used to extend the range of a network by a
 - In wireless networks, repeaters play a critical role in extending the coverage area. When a wireless signal weakens due to distance or obstacles like walls and interference, a repeater placed in the vicinity can receive the signal, amplify it, and then retransmit it to reach areas that were previously out of range.
 
 ---
-
-## Hub
+## **Hub**
 
 Hub is often referred to as a "*multi-port repeater*" because it shares similarities with a repeater and has multiple ports to connect multiple devices. The primary function of a hub is to receive incoming data packets from one connected device and **broadcast** them, or repeat the signal to all other connected devices. This broadcasting approach is often referred to as "*flooding*". Hubs also didn't understand the actual signal. This means that Hubs do not have the intelligence to determine which specific device should receive that data packet or signal. Both repeater and hub work at the **Physical Layer (Layer 1)** of the OSI model. **Hubs** operates in **half-duplex** mode. Only one device can send or receive data at a time.
 
 - The Wi-Fi network is essentially a "*hub in the air*". While both hubs and Wi-Fi networks use broadcast communication, the main difference lies in the medium and the underlying technologies. Hubs are devices used in wired networks, and Wi-Fi is a technology used in wireless networks.
 
 ---
-
-## Switch
+## **Switch**
 
 Switch is a fundamental networking device used to connect multiple devices **within a local network** and facilitate communication between them. It operates at the **Data Link Layer (Layer 2)** of the OSI model. The big difference between a switch and a hub is that a switch has intelligence. A switch actually reads the [frames](https://faridarif.github.io/posts/packets-vs-frames/) received on [Ethernet](https://faridarif.github.io/posts/Ethernet/), which are sent by the connected device. Switches use **MAC address table** to determine which specific device should receive those frames. Unlike hubs, which use broadcast communication and transmit data to all connected devices, a switch uses a process called "*packet switching*" to intelligently forward data packets to their intended destination. Key characteristics and functionalities of a switch include :
 
@@ -41,8 +38,7 @@ Switch is a fundamental networking device used to connect multiple devices **wit
 Switches have largely replaced hubs in modern networks due to their intelligent and efficient data forwarding capabilities. By selectively forwarding data only to the relevant ports, switches significantly reduce network congestion, collisions, and unnecessary traffic.
 
 ---
-
-## Router
+## **Router**
 
 Router is a critical networking device that operates at the **Network Layer (Layer 3)** of the OSI model. It is used to **connect different networks** together and facilitate the exchange of data between them. Routers play a fundamental role in directing data packets to their intended destinations, enabling communication between devices on **different networks**. Key characteristics and functionalities of a router include :
 
@@ -55,8 +51,7 @@ Router is a critical networking device that operates at the **Network Layer (Lay
 Routers are crucial for the proper functioning of the internet and many other complex networks. The data packets are directed efficiently through the network, ensuring that information reaches its intended destination while taking the most optimal path possible.
 
 ---
-
-## References
+## **References**
 
 - [Repeater](https://en.wikipedia.org/wiki/Repeater)
 - [Ethernet hub](https://en.wikipedia.org/wiki/Ethernet_hub)

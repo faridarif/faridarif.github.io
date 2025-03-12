@@ -6,13 +6,14 @@ categories: ["Networking"]
 ---
 **Note: [Fundamental Routing Concepts - Routing (Concepts, Protocols and Configurations)](https://faridarif.github.io/posts/routing/), [EIGRP (Enhanced Interior Gateway Routing Protocol)](https://faridarif.github.io/posts/EIGRP/) and [OSPF (Open Shortest Path First)](https://faridarif.github.io/posts/OSPF/)**
 
-## Enable IPv6 Routing on Router
+### **Enable IPv6 Routing on Router**
 
 ```bash
 Router(config)# ipv6 unicast-routing
 ```
 
-## IPv6 Static Routing
+---
+## **IPv6 Static Routing**
 
 - **ipv6-prefix** : Destination network address of the remote network to be added to the routing table.
 - **prefix-length** : Prefix length of the remote network to be added to the routing table.
@@ -56,7 +57,7 @@ Router-1(config)# ipv6 route ::/0 [<ipv6-address> or <exit-interface>]
 ```bash
 Router-1(config)# ipv6 route ::/0 2001:DB8:ACAD:4::2 5
 ```
-### Verify IPv6 Static Routes
+### **Verify IPv6 Static Routes**
 
 This command shows the IPv6 routing table :
 
@@ -64,7 +65,8 @@ This command shows the IPv6 routing table :
 Router# show ipv6 route static
 ```
 
-## EIGRP for IPv6
+---
+## **EIGRP for IPv6**
 
 1) Initialize the EIGRP routing process and enter the EIGRP router configuration mode :
 
@@ -117,7 +119,9 @@ Router(config-router)# redistribute static
 Router(config-if)# ipv6 hello-interval eigrp <AS-number> <seconds>
 Router(config-if)# ipv6 hold-time eigrp <AS-number> <seconds>
 ```
-## OSPFv3
+
+---
+## **OSPFv3**
 
 1) Initialize OSPF routing process and enter the OSPF router configuration mode :
 
@@ -168,7 +172,8 @@ Router(config-if)# ipv6 ospf hello-interval <seconds>
 Router(config-if)# ipv6 ospf dead-interval <seconds>
 ```
 
-## References
+---
+## **References**
 
 - [Chapter 1: Routing Concepts - Cisco NetAcad Powerpoint Presentation Slide](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/miscellaneous/Chapter%201%20Routing%20Concepts.pptx)
 - [Chapter 2: Static Routing - Cisco NetAcad Powerpoint Presentation Slide](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/miscellaneous/Chapter%202%20Static%20Routing.pptx)

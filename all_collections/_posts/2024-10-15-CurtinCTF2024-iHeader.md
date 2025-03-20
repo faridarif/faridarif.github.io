@@ -65,7 +65,7 @@ This modular design allows PNG readers to easily process or skip chunks based on
 
 ![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/iHeader4.png){:.align-center}
 
-### **Ancillary Chunks**
+### **Auxillary Chunks**
 
 - **`tEXt`, `zTXt`, `iTXt`**: For textual data or metadata.
 - **`pHYs`, `gAMA`, `cHRM`**: Various ancillary info (physical pixel dimensions, gamma, color space, etc.).

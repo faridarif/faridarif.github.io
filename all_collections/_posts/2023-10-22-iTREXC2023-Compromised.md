@@ -4,6 +4,7 @@ title: "iTREXC2023 - Compromised"
 date: 2023-10-22
 categories: ["CTF WriteUp]
 ---
+
 **Note: This is my write-up for one of the forensic challenges in Cyber Security Challenge competition organized by iTREXC (4th International Innovation, Technology & Research Exhibition and Conference). This "Compromised" challenge is in Linux Forensic category. The difficulty of this "Compromised" challenge is Medium.**
 
 For this "Compromised" challenge, we were given a `.pcap` (packet capture) file named `traffic.pcap`. We can open the file with Wireshark and we can filter for HTTP traffic. We can see that the attacker make a GET request to the web server asking for `/images/date.php`.

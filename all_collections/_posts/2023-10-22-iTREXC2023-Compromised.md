@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "iTREXC2023 - Compromised"
+title: "iTREXC2023: Compromised"
 date: 2023-10-22
-categories: ["CTF WriteUp]
+categories:
+  - CTF WriteUp
 ---
 
 **Note: This is my write-up for one of the forensic challenges in Cyber Security Challenge competition organized by iTREXC (4th International Innovation, Technology & Research Exhibition and Conference). This "Compromised" challenge is in Linux Forensic category. The difficulty of this "Compromised" challenge is Medium.**

@@ -38,7 +38,7 @@ The attacker encrypt the `flag.txt` and  `important.txt` file :
 
 ![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/compromised-encrypted-file.png){:.align-center}
 
-The attacker create a cronjob to automatically run the malicious script.
+The attacker create a cronjob on the compromised server to automatically run the malicious script.
 
 ![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/compromised-persistent-path.png){:.align-center}
 

@@ -115,15 +115,15 @@ Upon creating an account and exploring the Gitea instance, two repositories belo
 
 1) `docker-config` :
 	
-	![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/Titanic16.png){:.align-center}
+![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/Titanic16.png){:.align-center}
 	
-	This repository typically contains configuration files and scripts used for deploying the application infrastructure using Docker. In this case, it included directories for both gitea and mysql. In the gitea directory, a file named `docker-compose.yml` is present. This file specifies the deployment of the Gitea service.. In the mysql directory, another `docker-compose.yml` defined the deployment of a MySQL database with related environment variables.
+This repository typically contains configuration files and scripts used for deploying the application infrastructure using Docker. In this case, it included directories for both gitea and mysql. In the gitea directory, a file named `docker-compose.yml` is present. This file specifies the deployment of the Gitea service.. In the mysql directory, another `docker-compose.yml` defined the deployment of a MySQL database with related environment variables.
 	
 2) `flask-app` :
 	
-	![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/Titanic17.png){:.align-center}
+![](https://raw.githubusercontent.com/faridarif/faridarif.github.io/master/pictures/Titanic17.png){:.align-center}
 	
-	This repository contains the source code for the Titanic Booking System. The main file, `app.py`, defines the application’s behavior. Reviewing this code helped confirm how the booking system worked and underscored the presence of an LFI vulnerability in the way files were retrieved based on user input. 
+This repository contains the source code for the Titanic Booking System. The main file, `app.py`, defines the application’s behavior. Reviewing this code helped confirm how the booking system worked and underscored the presence of an LFI vulnerability in the way files were retrieved based on user input. 
 
 
 In he `docker-compose,yml` located under gitea directory from the `docker-config` repository, the volume mapping is specified as follows : 
